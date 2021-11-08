@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="¿Estás buscando propiedades en Argentina?. Tenemos más de X inmuebles para vos. Encontrá casas, departamentos y otros inmuebles en Inmobiliaria Burgos!">
+    <meta name="keywords" content="Inmobiliaria, Inmobiliaria Burgos, Argentina, departamento, casa, local comercial, terreno, loteos, compra, alquiler, propiedades, inmuebles">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Inmobiliaria Burgos | Alquiler y Compra</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-md navbar-light header__nav">
+            <div class="container-fluid">
+                <a href="index.html" ><img src="img/header/logo.svg" alt="Logo" class="header__nav-logo"></a>
+                <button type="button"
+                    class="navbar-toggler header__nav-button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#MenuNavegacion">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+			<div id="MenuNavegacion" class="collapse navbar-collapse">
+				<ul class="navbar-nav ms-3 header__nav-list">
+					<li class="nav-item">
+                        <a class="nav-link header__nav-text" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link header__nav-text header__nav-text--activo" href="propiedades.html">Propiedades</a>
+                    </li>
+					<li class="nav-item">
+                        <a class="nav-link header__nav-text" href="nosotros.html">Nosotros</a>
+                    </li>
+					<li class="nav-item">
+                        <a class="nav-link header__nav-text" href="contacto.html">Contacto</a>
+                    </li>
+				</ul>
+			</div>
+		</nav>
+    </header>
+    <main class="propiedades">
+        <section class="propiedades__sectionUno">
+            <form action="" class="propiedades__form">
+                <div class="propiedades__form-div">
+                    <h1 class="propiedades__title">Busca tu inmueble ¡aquí!</h1>
+                </div>
+                <div class="propiedades__form-div propiedades__form-divRow">
+                    <div class="propiedades__form-group">
+                        <label for="propiedad" class="propiedades__form-label">Tipo de inmueble</label>
+                        <select name="inmueble" id="inmueble" class="propiedades__form-input">
+                            <option value="todas" class="propiedades__form-text">Todos los Inmuebles</option>
+                            <option value="casa" class="propiedades__form-text">Casa</option>
+                            <option value="departamento" class="propiedades__form-text">Departamento</option>
+                            <option value="local-comercial" class="propiedades__form-text">Local Comercial</option>
+                        </select>
+                    </div>
+                    <div class="propiedades__form-group">
+                        <label for="ubicacion" class="propiedades__form-label">Ubicación</label>
+                        <select name="ubicacion" id="ubicacion" class="propiedades__form-input">
+                            <option value="s-e" class="propiedades__form-text">Sin especificar</option>
+                            <option value="oeste" class="propiedades__form-text">Zona Oeste</option>
+                            <option value="norte" class="propiedades__form-text">Zona Norte</option>
+                            <option value="sur" class="propiedades__form-text">Zona Sur</option>
+                            <option value="bsas" class="propiedades__form-text">Prov. BsAs.</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="propiedades__form-div">
+                    <div class="propiedades__form-group">
+                        <label for="operacion" class="propiedades__form-label">Tipo de operación</label>
+                        <select name="operacion" id="operacion" class="propiedades__form-input">
+                            <option value="s-e" class="propiedades__form-text">Sin especificar</option>
+                            <option value="alquiler" class="propiedades__form-text">Alquiler</option>
+                            <option value="compra" class="propiedades__form-text">Compra</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="propiedades__form-div">
+                    <div class="propiedades__form-group">
+                        <p class="propiedades__form-label">Precio</p>
+                        <div class="propiedades__precio">
+                            <div class="propiedades__form-radio">
+                                <input type="radio" value="Peso ARS" id="peso" name="divisa" >
+                                <label for="peso" class="propiedades__form-sublabel">Peso ARS</label>
+                            </div>
+                            <div class="propiedades__form-radio">
+                                <input type="radio" value="USD" id="usd" name="divisa" >
+                                <label for="usd" class="propiedades__form-sublabel">US Dólar (USD)</label>
+                            </div>
+                        </div>
+                        <div class="propiedades__precio">
+                            <div class="propiedades__precio-monto">
+                                <label for="min" class="propiedades__form-sublabel">Mínimo:</label>
+                                <select name="precio" id="min" class="propiedades__form-input">
+                                    <option value="s-e" class="propiedades__form-text">Sin especificar</option>
+                                    <option value="50000" class="propiedades__form-text">50.000</option>
+                                    <option value="150000" class="propiedades__form-text">150.000</option>
+                                    <option value="250000" class="propiedades__form-text">250.000</option>
+                                    <option value="350000" class="propiedades__form-text">350.000</option>
+                                    <option value="450000" class="propiedades__form-text">450.000</option>
+                                </select>
+                            </div>
+                            <div class="propiedades__precio-monto">
+                                <label for="max" class="propiedades__form-sublabel">Máximo:</label>
+                                <select name="precio" id="max" class="propiedades__form-input">
+                                    <option value="s-e" class="propiedades__form-text">Sin especificar</option>
+                                    <option value="100000" class="propiedades__form-text">100.000</option>
+                                    <option value="200000" class="propiedades__form-text">200.000</option>
+                                    <option value="300000" class="propiedades__form-text">300.000</option>
+                                    <option value="400000" class="propiedades__form-text">400.000</option>
+                                    <option value="500000" class="propiedades__form-text">500.000</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="propiedades__form-div">
+                    <div class="propiedades__form-group">
+                        <div>
+                            <p class="propiedades__form-label">Ambientes</p>
+                        </div>
+                        <div class="propiedades__ambiente">
+                            <div class="propiedades__ambiente-div">
+                                <label for="min" class="propiedades__form-sublabel">Mínimo:</label>
+                                <select name="precio" id="min" class="propiedades__form-input">
+                                    <option value="s-e" class="propiedades__form-text">Sin especificar</option>
+                                    <option value="1" class="propiedades__form-text">Monoambiente</option>
+                                    <option value="2" class="propiedades__form-text">2</option>
+                                    <option value="3" class="propiedades__form-text">3</option>
+                                    <option value="4" class="propiedades__form-text">4</option>
+                                    <option value="5" class="propiedades__form-text">+5</option>
+                                </select>
+                            </div>
+                            <div class="propiedades__ambiente-div">
+                                <label for="max" class="propiedades__form-sublabel">Máximo:</label>
+                                <select name="precio" id="max" class="propiedades__form-input">
+                                    <option value="s-e" class="propiedades__form-text">Sin especificar</option>
+                                    <option value="1" class="propiedades__form-text">Monoambiente</option>
+                                    <option value="2" class="propiedades__form-text">2</option>
+                                    <option value="3" class="propiedades__form-text">3</option>
+                                    <option value="4" class="propiedades__form-text">4</option>
+                                    <option value="5" class="propiedades__form-text">+5</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="propiedades__form-div">
+                    <div class="accordion propiedades__form-group" id="accordionExample">
+                        <div class="propiedades__acordion">
+                            <p class="propiedades__acordion-title p-0 m-0">
+                                <button class="propiedades__acordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Búsqueda Avanzada <i class="fas fa-chevron-down"></i></button>
+                            </p>
+                            <div id="collapseOne" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                                <div class="accordion-body p-0 m-0">
+                                    <divc class="propiedades__accordion-item">
+                                        <p class="propiedades__form-label">Superficie</p>
+                                        <div class="propiedades__accordion-subitem">
+                                            <div class="propiedades__form-radio">
+                                                <input type="radio" value="m²" id="metros" name="superficie">
+                                                <label for="metros" class="propiedades__form-sublabel">m²</label>
+                                            </div>
+                                            <div class="propiedades__form-radio">
+                                                <input type="radio" value="HA" id="ha" name="superficie" >
+                                                <label for="ha" class="propiedades__form-sublabel">HA</label>
+                                            </div>
+                                        </div>
+                                        <div class="propiedades__accordion-subitem">
+                                            <div class="propiedades__superficie-div">
+                                                <label for="minimo" class="propiedades__form-sublabel">Mínimo:</label>
+                                                <input type="number" id="minimo" min="0" placeholder="Sin especificar" class="propiedades__form-superficie">
+                                            </div>
+                                            <div class="propiedades__superficie-div">
+                                                <label for="maximo" class="propiedades__form-sublabel">Máximo:</label>
+                                                <input type="number" id="maximo" min="0" placeholder="Sin especificar" class="propiedades__form-superficie">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="propiedades__accordion-item">
+                                        <p class="propiedades__form-label">Baños</p>
+                                        <ul class="propiedades__list">
+                                            <li class="propiedades__list-item"><input class="propiedades__list-button" type="button" value="Sin"></li>
+                                            <li class="propiedades__list-item"><input class="propiedades__list-button" type="button" value="+1"></li>
+                                            <li class="propiedades__list-item"><input class="propiedades__list-button" type="button" value="+2"></li>
+                                            <li class="propiedades__list-item"><input class="propiedades__list-button" type="button" value="+3"></li>
+                                            <li class="propiedades__list-item"><input class="propiedades__list-button" type="button" value="+4"></li>
+                                            <li class="propiedades__list-item"><input class="propiedades__list-button" type="button" value="+5"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="propiedades__submit">
+                    <input type="submit" value="Aplicar Filtros" class="propiedades__submit-text">
+                </div>
+                <div class="propiedades__reset">
+                    <input type="reset" value="Remover Filtros" class="propiedades__reset-text">
+                </div>
+            </form>
+        </section>
+        <section class="propiedades__sectionDos">
+            <div class="propiedades__sectionDos-divs">
+                <div class="propiedades__sectionDos-div">
+                    <div class="propiedades__sectionDos-imgDiv">
+                        <img src="img/index/destacadas/1.jpg" alt="Destacadas" class="propiedades__sectionDos-img">
+                        <p class="propiedades__sectionDos-operacion">Alquiler</p>
+                    </div>
+                    <div class="propiedades__sectionDos-textDiv">
+                        <p class="propiedades__sectionDos-textTitle">Departamento - Piso 10º</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-map-marker-alt"></i> Av. Libertador 912, CABA</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-dollar-sign"></i><span class="propiedades__sectionDos-text--bold"> ARS </span>80.000/MES</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-ruler-combined"></i> 150 m²</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-toilet"></i><span class="propiedades__sectionDos-text--bold"> 2</span> Baños</p>
+                        <p class="propiedades__sectionDos-text"><span class="propiedades__sectionDos-text--bold">4</span> Ambientes</p>
+                    </div>
+                    <div class="propiedades__sectionDos-buttonDiv">
+                        <a href="contacto.html" class="propiedades__sectionDos-button" role="button">Contactanos</a>
+                    </div>
+                </div>
+                <div class="propiedades__sectionDos-div">
+                    <div class="propiedades__sectionDos-imgDiv">
+                        <img src="img/index/destacadas/2.jpg" alt="Destacadas" class="propiedades__sectionDos-img">
+                        <p class="propiedades__sectionDos-operacion">Venta</p>
+                    </div>
+                    <div class="propiedades__sectionDos-textDiv">
+                        <p class="propiedades__sectionDos-textTitle">Departamento - Piso 4º</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-map-marker-alt"></i> Av. Córdoba 1218, CABA</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-dollar-sign"></i><span class="propiedades__sectionDos-text--bold"> USD </span>150.000</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-ruler-combined"></i> 115 m²</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-toilet"></i><span class="propiedades__sectionDos-text--bold"> 1</span> Baños</p>
+                        <p class="propiedades__sectionDos-text"><span class="propiedades__sectionDos-text--bold">3</span> Ambientes</p>
+                    </div>
+                    <div class="propiedades__sectionDos-buttonDiv">
+                        <a href="contacto.html" class="propiedades__sectionDos-button" role="button">Contactanos</a>
+                    </div>
+                </div>
+                <div class="propiedades__sectionDos-div">
+                    <div class="propiedades__sectionDos-imgDiv">
+                        <img src="img/index/destacadas/3.jpg" alt="Destacadas" class="propiedades__sectionDos-img">
+                        <p class="propiedades__sectionDos-operacion">Alquiler</p>
+                    </div>
+                    <div class="propiedades__sectionDos-textDiv">
+                        <p class="propiedades__sectionDos-textTitle">DEPARTAMENTO - PISO 10º</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-map-marker-alt"></i> Agüero 2200, CABA</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-dollar-sign"></i><span class="propiedades__sectionDos-text--bold"> ARS </span>60.000/MES</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-ruler-combined"></i> 70 m²</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-toilet"></i><span class="propiedades__sectionDos-text--bold"> 1</span> Baños</p>
+                        <p class="propiedades__sectionDos-text"><span class="propiedades__sectionDos-text--bold">2</span> Ambientes</p>
+                    </div>
+                    <div class="propiedades__sectionDos-buttonDiv">
+                        <a href="contacto.html" class="propiedades__sectionDos-button" role="button">Contactanos</a>
+                    </div>
+                </div>
+                <div class="propiedades__sectionDos-div">
+                    <div class="propiedades__sectionDos-imgDiv">
+                        <img src="img/index/destacadas/4.jpg" alt="Destacadas" class="propiedades__sectionDos-img">
+                        <p class="propiedades__sectionDos-operacion">Venta</p>
+                    </div>
+                    <div class="propiedades__sectionDos-textDiv">
+                        <p class="propiedades__sectionDos-textTitle">CASA QUINTA CON JARDÍN</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-map-marker-alt"></i> Barrio Cerrado Iri, Prov. BsAs.</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-dollar-sign"></i><span class="propiedades__sectionDos-text--bold"> USD </span> Consultar</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-ruler-combined"></i> 600 m²</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-toilet"></i><span class="propiedades__sectionDos-text--bold"> 4</span> Baños</p>
+                        <p class="propiedades__sectionDos-text"><span class="propiedades__sectionDos-text--bold">8</span> Ambientes</p>
+                    </div>
+                    <div class="propiedades__sectionDos-buttonDiv">
+                        <a href="contacto.html" class="propiedades__sectionDos-button" role="button">Contactanos</a>
+                    </div>
+                </div>
+                <div class="propiedades__sectionDos-div">
+                    <div class="propiedades__sectionDos-imgDiv">
+                        <img src="img/index/destacadas/1.jpg" alt="Destacadas" class="propiedades__sectionDos-img">
+                        <p class="propiedades__sectionDos-operacion">Alquiler</p>
+                    </div>
+                    <div class="propiedades__sectionDos-textDiv">
+                        <p class="propiedades__sectionDos-textTitle">Departamento - Piso 10º</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-map-marker-alt"></i> Av. Libertador 912, CABA</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-dollar-sign"></i><span class="propiedades__sectionDos-text--bold"> ARS </span>80.000/MES</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-ruler-combined"></i> 150 m²</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-toilet"></i><span class="propiedades__sectionDos-text--bold"> 2</span> Baños</p>
+                        <p class="propiedades__sectionDos-text"><span class="propiedades__sectionDos-text--bold">4</span> Ambientes</p>
+                    </div>
+                    <div class="propiedades__sectionDos-buttonDiv">
+                        <a href="contacto.html" class="propiedades__sectionDos-button" role="button">Contactanos</a>
+                    </div>
+                </div>
+                <div class="propiedades__sectionDos-div">
+                    <div class="propiedades__sectionDos-imgDiv">
+                        <img src="img/index/destacadas/2.jpg" alt="Destacadas" class="propiedades__sectionDos-img">
+                        <p class="propiedades__sectionDos-operacion">Venta</p>
+                    </div>
+                    <div class="propiedades__sectionDos-textDiv">
+                        <p class="propiedades__sectionDos-textTitle">Departamento - Piso 4º</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-map-marker-alt"></i> Av. Córdoba 1218, CABA</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-dollar-sign"></i><span class="propiedades__sectionDos-text--bold"> USD </span>150.000</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-ruler-combined"></i> 115 m²</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-toilet"></i><span class="propiedades__sectionDos-text--bold"> 1</span> Baños</p>
+                        <p class="propiedades__sectionDos-text"><span class="propiedades__sectionDos-text--bold">3</span> Ambientes</p>
+                    </div>
+                    <div class="propiedades__sectionDos-buttonDiv">
+                        <a href="contacto.html" class="propiedades__sectionDos-button" role="button">Contactanos</a>
+                    </div>
+                </div>
+                <div class="propiedades__sectionDos-div">
+                    <div class="propiedades__sectionDos-imgDiv">
+                        <img src="img/index/destacadas/3.jpg" alt="Destacadas" class="propiedades__sectionDos-img">
+                        <p class="propiedades__sectionDos-operacion">Alquiler</p>
+                    </div>
+                    <div class="propiedades__sectionDos-textDiv">
+                        <p class="propiedades__sectionDos-textTitle">DEPARTAMENTO - PISO 10º</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-map-marker-alt"></i> Agüero 2200, CABA</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-dollar-sign"></i><span class="propiedades__sectionDos-text--bold"> ARS </span>60.000/MES</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-ruler-combined"></i> 70 m²</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-toilet"></i><span class="propiedades__sectionDos-text--bold"> 1</span> Baños</p>
+                        <p class="propiedades__sectionDos-text"><span class="propiedades__sectionDos-text--bold">2</span> Ambientes</p>
+                    </div>
+                    <div class="propiedades__sectionDos-buttonDiv">
+                        <a href="contacto.html" class="propiedades__sectionDos-button" role="button">Contactanos</a>
+                    </div>
+                </div>
+                <div class="propiedades__sectionDos-div">
+                    <div class="propiedades__sectionDos-imgDiv">
+                        <img src="img/index/destacadas/4.jpg" alt="Destacadas" class="propiedades__sectionDos-img">
+                        <p class="propiedades__sectionDos-operacion">Venta</p>
+                    </div>
+                    <div class="propiedades__sectionDos-textDiv">
+                        <p class="propiedades__sectionDos-textTitle">CASA QUINTA CON JARDÍN</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-map-marker-alt"></i> Barrio Cerrado Iri, Prov. BsAs.</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-dollar-sign"></i><span class="propiedades__sectionDos-text--bold"> USD </span> Consultar</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-ruler-combined"></i> 600 m²</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-toilet"></i><span class="propiedades__sectionDos-text--bold"> 4</span> Baños</p>
+                        <p class="propiedades__sectionDos-text"><span class="propiedades__sectionDos-text--bold">8</span> Ambientes</p>
+                    </div>
+                    <div class="propiedades__sectionDos-buttonDiv">
+                        <a href="contacto.html" class="propiedades__sectionDos-button" role="button">Contactanos</a>
+                    </div>
+                </div>
+                <div class="propiedades__sectionDos-div">
+                    <div class="propiedades__sectionDos-imgDiv">
+                        <img src="img/index/destacadas/1.jpg" alt="Destacadas" class="propiedades__sectionDos-img">
+                        <p class="propiedades__sectionDos-operacion">Alquiler</p>
+                    </div>
+                    <div class="propiedades__sectionDos-textDiv">
+                        <p class="propiedades__sectionDos-textTitle">Departamento - Piso 10º</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-map-marker-alt"></i> Av. Libertador 912, CABA</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-dollar-sign"></i><span class="propiedades__sectionDos-text--bold"> ARS </span>80.000/MES</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-ruler-combined"></i> 150 m²</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-toilet"></i><span class="propiedades__sectionDos-text--bold"> 2</span> Baños</p>
+                        <p class="propiedades__sectionDos-text"><span class="propiedades__sectionDos-text--bold">4</span> Ambientes</p>
+                    </div>
+                    <div class="propiedades__sectionDos-buttonDiv">
+                        <a href="contacto.html" class="propiedades__sectionDos-button" role="button">Contactanos</a>
+                    </div>
+                </div>
+                <div class="propiedades__sectionDos-div">
+                    <div class="propiedades__sectionDos-imgDiv">
+                        <img src="img/index/destacadas/2.jpg" alt="Destacadas" class="propiedades__sectionDos-img">
+                        <p class="propiedades__sectionDos-operacion">Venta</p>
+                    </div>
+                    <div class="propiedades__sectionDos-textDiv">
+                        <p class="propiedades__sectionDos-textTitle">Departamento - Piso 4º</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-map-marker-alt"></i> Av. Córdoba 1218, CABA</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-dollar-sign"></i><span class="propiedades__sectionDos-text--bold"> USD </span>150.000</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-ruler-combined"></i> 115 m²</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-toilet"></i><span class="propiedades__sectionDos-text--bold"> 1</span> Baños</p>
+                        <p class="propiedades__sectionDos-text"><span class="propiedades__sectionDos-text--bold">3</span> Ambientes</p>
+                    </div>
+                    <div class="propiedades__sectionDos-buttonDiv">
+                        <a href="contacto.html" class="propiedades__sectionDos-button" role="button">Contactanos</a>
+                    </div>
+                </div>
+                <div class="propiedades__sectionDos-div">
+                    <div class="propiedades__sectionDos-imgDiv">
+                        <img src="img/index/destacadas/3.jpg" alt="Destacadas" class="propiedades__sectionDos-img">
+                        <p class="propiedades__sectionDos-operacion">Alquiler</p>
+                    </div>
+                    <div class="propiedades__sectionDos-textDiv">
+                        <p class="propiedades__sectionDos-textTitle">DEPARTAMENTO - PISO 10º</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-map-marker-alt"></i> Agüero 2200, CABA</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-dollar-sign"></i><span class="propiedades__sectionDos-text--bold"> ARS </span>60.000/MES</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-ruler-combined"></i> 70 m²</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-toilet"></i><span class="propiedades__sectionDos-text--bold"> 1</span> Baños</p>
+                        <p class="propiedades__sectionDos-text"><span class="propiedades__sectionDos-text--bold">2</span> Ambientes</p>
+                    </div>
+                    <div class="propiedades__sectionDos-buttonDiv">
+                        <a href="contacto.html" class="propiedades__sectionDos-button" role="button">Contactanos</a>
+                    </div>
+                </div>
+                <div class="propiedades__sectionDos-div">
+                    <div class="propiedades__sectionDos-imgDiv">
+                        <img src="img/index/destacadas/4.jpg" alt="Destacadas" class="propiedades__sectionDos-img">
+                        <p class="propiedades__sectionDos-operacion">Venta</p>
+                    </div>
+                    <div class="propiedades__sectionDos-textDiv">
+                        <p class="propiedades__sectionDos-textTitle">CASA QUINTA CON JARDÍN</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-map-marker-alt"></i> Barrio Cerrado Iri, Prov. BsAs.</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-dollar-sign"></i><span class="propiedades__sectionDos-text--bold"> USD </span> Consultar</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-ruler-combined"></i> 600 m²</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-toilet"></i><span class="propiedades__sectionDos-text--bold"> 4</span> Baños</p>
+                        <p class="propiedades__sectionDos-text"><span class="propiedades__sectionDos-text--bold">8</span> Ambientes</p>
+                    </div>
+                    <div class="propiedades__sectionDos-buttonDiv">
+                        <a href="contacto.html" class="propiedades__sectionDos-button" role="button">Contactanos</a>
+                    </div>
+                </div>
+                <div class="propiedades__sectionDos-div">
+                    <div class="propiedades__sectionDos-imgDiv">
+                        <img src="img/index/destacadas/1.jpg" alt="Destacadas" class="propiedades__sectionDos-img">
+                        <p class="propiedades__sectionDos-operacion">Alquiler</p>
+                    </div>
+                    <div class="propiedades__sectionDos-textDiv">
+                        <p class="propiedades__sectionDos-textTitle">Departamento - Piso 10º</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-map-marker-alt"></i> Av. Libertador 912, CABA</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-dollar-sign"></i><span class="propiedades__sectionDos-text--bold"> ARS </span>80.000/MES</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-ruler-combined"></i> 150 m²</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-toilet"></i><span class="propiedades__sectionDos-text--bold"> 2</span> Baños</p>
+                        <p class="propiedades__sectionDos-text"><span class="propiedades__sectionDos-text--bold">4</span> Ambientes</p>
+                    </div>
+                    <div class="propiedades__sectionDos-buttonDiv">
+                        <a href="contacto.html" class="propiedades__sectionDos-button" role="button">Contactanos</a>
+                    </div>
+                </div>
+                <div class="propiedades__sectionDos-div">
+                    <div class="propiedades__sectionDos-imgDiv">
+                        <img src="img/index/destacadas/2.jpg" alt="Destacadas" class="propiedades__sectionDos-img">
+                        <p class="propiedades__sectionDos-operacion">Venta</p>
+                    </div>
+                    <div class="propiedades__sectionDos-textDiv">
+                        <p class="propiedades__sectionDos-textTitle">Departamento - Piso 4º</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-map-marker-alt"></i> Av. Córdoba 1218, CABA</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-dollar-sign"></i><span class="propiedades__sectionDos-text--bold"> USD </span>150.000</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-ruler-combined"></i> 115 m²</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-toilet"></i><span class="propiedades__sectionDos-text--bold"> 1</span> Baños</p>
+                        <p class="propiedades__sectionDos-text"><span class="propiedades__sectionDos-text--bold">3</span> Ambientes</p>
+                    </div>
+                    <div class="propiedades__sectionDos-buttonDiv">
+                        <a href="contacto.html" class="propiedades__sectionDos-button" role="button">Contactanos</a>
+                    </div>
+                </div>
+                <div class="propiedades__sectionDos-div">
+                    <div class="propiedades__sectionDos-imgDiv">
+                        <img src="img/index/destacadas/3.jpg" alt="Destacadas" class="propiedades__sectionDos-img">
+                        <p class="propiedades__sectionDos-operacion">Alquiler</p>
+                    </div>
+                    <div class="propiedades__sectionDos-textDiv">
+                        <p class="propiedades__sectionDos-textTitle">DEPARTAMENTO - PISO 10º</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-map-marker-alt"></i> Agüero 2200, CABA</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-dollar-sign"></i><span class="propiedades__sectionDos-text--bold"> ARS </span>60.000/MES</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-ruler-combined"></i> 70 m²</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-toilet"></i><span class="propiedades__sectionDos-text--bold"> 1</span> Baños</p>
+                        <p class="propiedades__sectionDos-text"><span class="propiedades__sectionDos-text--bold">2</span> Ambientes</p>
+                    </div>
+                    <div class="propiedades__sectionDos-buttonDiv">
+                        <a href="contacto.html" class="propiedades__sectionDos-button" role="button">Contactanos</a>
+                    </div>
+                </div>
+                <div class="propiedades__sectionDos-div">
+                    <div class="propiedades__sectionDos-imgDiv">
+                        <img src="img/index/destacadas/4.jpg" alt="Destacadas" class="propiedades__sectionDos-img">
+                        <p class="propiedades__sectionDos-operacion">Venta</p>
+                    </div>
+                    <div class="propiedades__sectionDos-textDiv">
+                        <p class="propiedades__sectionDos-textTitle">CASA QUINTA CON JARDÍN</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-map-marker-alt"></i> Barrio Cerrado Iri, Prov. BsAs.</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-dollar-sign"></i><span class="propiedades__sectionDos-text--bold"> USD </span> Consultar</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-ruler-combined"></i> 600 m²</p>
+                        <p class="propiedades__sectionDos-text"><i class="fas fa-toilet"></i><span class="propiedades__sectionDos-text--bold"> 4</span> Baños</p>
+                        <p class="propiedades__sectionDos-text"><span class="propiedades__sectionDos-text--bold">8</span> Ambientes</p>
+                    </div>
+                    <div class="propiedades__sectionDos-buttonDiv">
+                        <a href="contacto.html" class="propiedades__sectionDos-button" role="button">Contactanos</a>
+                    </div>
+                </div>
+        </div>
+        </section>
+    </main>    
+    <footer class="footer">
+        <div class="footer__div">
+            <div class="footer__item-redes">
+                <ul class="footer__redes-list">
+                    <li class="footer__redes-item"><a href="https://www.instagram.com" target="_blank"><img src="img/footer/instagram.svg" alt="Instagram" class="footer__redes-logo"></a></li>
+                    <li class="footer__redes-item"><a href="https://www.facebook.com" target="_blank"><img src="img/footer/facebook.svg" alt="Facebook" class="footer__redes-logo"></a></li>
+                    <li class="footer__redes-item"><a href="https://twitter.com" target="_blank"><img src="img/footer/twitter.svg" alt="Twitter" class="footer__redes-logo"></a></li>
+                    <li class="footer__redes-item"><a href="https://www.linkedin.com" target="_blank"><img src="img/footer/linkedin.svg" alt="LinkedIn" class="footer__redes-logo"></a></li>
+                </ul>
+            </div>
+            <div class="footer__item-nav">
+                <nav class="footer__nav">
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item"><a href="index.html" class="footer__nav-text">Inicio</a></li>
+                        <li class="footer__nav-item"><a href="propiedades.html" class="footer__nav-text footer__nav-text--activo">Propiedades</a></li>
+                        <li class="footer__nav-item"><a href="nosotros.html" class="footer__nav-text">Nosotros</a></li>
+                        <li class="footer__nav-item"><a href="contacto.html" class="footer__nav-text">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__item-contacto">
+                <ul class="footer__contacto-list">
+                    <li class="footer__contacto-item"><p class="footer__contacto-text"><i class="fas fa-map-marker-alt"></i>Av. Bernabéu 912 - Piso 18°, CABA</p></li>
+                    <li class="footer__contacto-item"><p class="footer__contacto-text"><i class="fas fa-phone-alt"></i> +54 011 091218</p></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__div">
+            <p class="footer__copyright">Copyright © Burgos Propiedades – Salvador Burgos  Ermácora</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d0aef15ee7.js" crossorigin="anonymous"></script>
+</body>
+</html>

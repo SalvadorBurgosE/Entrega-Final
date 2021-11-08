@@ -1,0 +1,90 @@
+.sobrenos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 2px solid #e7e7e7;
+    .sobrenos__sectionUno {
+        text-align: center;
+        margin-top: 20px;
+        padding: 10px;
+        .sobrenos__sectionUno-title {
+            font-size: 2.4rem;
+            margin-bottom: .5rem;
+        }
+        .sobrenos__sectionUno-text {
+            font-size: 1.4rem;
+            margin: 5px;
+            color: #3e3e3e;
+        }
+    }
+    .sobrenos__sectionDos {
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: center;
+        .sobrenos__sectionDos-div {
+            margin: 1rem;
+            .sobrenos__sectionDos-img {
+                height: 200px;
+                border-radius: 50%;
+                box-shadow: 0 2px 3px 0 rgb(157, 157, 157);
+                margin: 5px 20px;
+            }
+            .sobrenos__sectionDos-text {
+                text-align: center;
+                font-weight: 700;
+                font-size: 1.6rem;
+                color: #3e3e3e;
+            }
+        }
+    }
+    .sobrenos__sectionTres {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .sobrenos__sectionTres-title {
+            font-size: 2.4rem;
+            margin: 10px;
+            text-align: center;
+        }
+        .servicios {
+            display: flex;
+            flex-flow: wrap row;
+            justify-content: center;
+            .servicios__div {
+                margin: 10px;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                .servicios__img {
+                    height: 150px;
+                    margin-bottom: 10px;
+                }
+                .servicios__container {
+                    border: 1px solid #e7e7e7;
+                    background-color: #fff;
+                    border-radius: 4px;
+                    border: $color-primario 3px solid;
+                    text-align: center;
+                    box-shadow: 0 2px 3px 0 rgb(157, 157, 157);
+                    margin: 10px 40px;
+                    padding: 5px 5px 10px 5px;
+                    width: 230px;
+                    .servicios__title {
+                        font-size: 1.6rem;
+                        margin: 8px;
+                        padding-bottom: 5px;
+                        text-align: center;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        border-bottom: 2px solid $color-primario;
+                    }
+                    .servicios__text {
+                        font-size: 1.4rem;
+                        margin: 10px 8px 15px 8px;
+                        color: #3e3e3e;
+                    }
+                }
+            }    
+        }
+    }
+}

@@ -1,0 +1,21 @@
+
+@import"var";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+@import"header";
+@import"footer";
+@import"index";
+@import"propiedades";
+@import"nosotros";
+@import"contacto";
+@import"media";

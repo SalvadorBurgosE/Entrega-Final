@@ -1,0 +1,634 @@
+
+@media (min-width: 620px) {
+    //PROPIEDADES FORM
+    .propiedades {
+        .propiedades__sectionUno {
+            .propiedades__form {
+                width: 90%;
+                .propiedades__form-divRow {
+                    display: flex;
+                    flex-direction: row;
+                }
+                .propiedades__form-div {
+                    .propiedades__title {
+                        font-size: 2.2rem;
+                    }
+                    .propiedades__form-group {
+                        text-align: center;
+                        .propiedades__form-label {
+                            font-size: 1.6rem;
+                        }
+                        .propiedades__form-input {
+                            margin: 0px 5px;
+                            .propiedades__form-text {
+                                font-size: 1.2rem;
+                            }
+                        }
+                        .propiedades__form-sublabel {
+                            font-size: 1.4rem;
+                        }
+                        .propiedades__precio {
+                            justify-content: center;
+                        }
+                        .propiedades__acordion {
+                            .propiedades__acordion-title {
+                                .propiedades__acordion-button {
+                                    font-size: 1.6rem;
+                                }
+                            }
+                            .propiedades__accordion-item {
+                                .propiedades__accordion-subitem {
+                                    justify-content: center;
+                                }
+                                .propiedades__list {
+                                    .propiedades__list-item {
+                                        list-style: none;
+                                        .propiedades__list-button {
+                                            font-size: 1.4rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .propiedades__submit {
+                    .propiedades__submit-text {
+                        font-size: 1.6rem;
+                    }
+                }
+                .propiedades__reset {
+                    .propiedades__reset-text {
+                        font-size: 1.4rem;
+                        
+                    }
+                }
+            }
+        }
+    }    
+    //PROPIEDADES FORM
+}
+
+@media (min-width: 768px) {
+ 
+    //HEADER
+    .header {
+        .header__nav {
+            padding: 15px;
+            margin-left: 20px;
+            .header__nav-logo {
+                height: 65px;
+            }
+            .header__nav-list {
+                .header__nav-text {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+    //HEADER
+    //FOOTER    
+    .footer {
+        .footer__div {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            .footer__item-redes {
+                order: 1;
+                width: 33%;
+                .footer__redes-list {
+                    .footer__redes-item {
+                        .footer__redes-logo {
+                            height: 35px;
+                            width: 35px;
+            
+                        }
+                    }
+                }
+            }
+            .footer__item-nav {
+                order: -1;
+                width: 33%;
+                .footer__nav-list {
+                    flex-direction: column;
+                    align-items: center;
+                    .footer__nav-item {
+                        margin-bottom: 2.5px;
+                        .footer__nav-text {
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+            }
+            .footer__item-contacto {
+                order: 2;
+                width: 33%;
+                .footer__contacto-list {
+                    .footer__contacto-item {
+                        .footer__contacto-text {
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+            }
+            .footer__copyright {
+                font-size: 1.2rem;
+            }
+        }   
+    }
+    //INDEX
+    .index {
+        .index__sectionUno {
+            height: 400px;
+            justify-content: center;
+            align-items: center;
+            .index__sectionUno-title {
+                font-size: 2.2rem;
+            }
+            .index__form {
+                display: flex;
+                flex-direction: row;
+                .index__form-group {
+                    .index__form-input {
+                        display: block;
+                        width: 100%;
+                        padding: 1rem;
+                        font-size: 1.4rem;
+                        .index__form-text {
+                            font-size: 1.4rem;
+                        }
+                    }
+                    .index__form-submit {
+                        width: 100%;
+                    }
+                }
+            }
+            .index__sectionUno-foot {
+                .index__sectionUno-text {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+        .index__sectionDos {
+            .index__sectionDos-title {
+                font-size: 2.4rem;
+            }
+            .index__sectionDos-divs {
+                .index__sectionDos-div {
+                    width: 250px;
+                    .index__sectionDos-imgDiv {
+                        .index__sectionDos-img {
+                            height: 175px;
+                        }
+                        .index__sectionDos-operacion {
+                            font-size: 1.2rem;
+                        } 
+                    }
+                    .index__sectionDos-textDiv {
+                        .index__sectionDos-textTitle {
+                            font-size: 1.6rem;
+                        }
+                        .index__sectionDos-text {
+                            font-size: 1.4rem;
+                        }
+                    }
+                    .index__sectionDos-buttonDiv{
+                        .index__sectionDos-button {
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+            }
+        }
+        .index__sectionTres {
+            .index__sectionTres-title {
+                font-size: 2.4rem;
+            }
+            .index__sectionTres-subtitle {
+                font-size: 2rem;
+            }
+            .index__sectionTres-divs {
+                .index__sectionTres-div {
+                    .index__sectionTres-divTitle {
+                        font-size: 1.8rem;
+                    }
+                    .index__sectionTres-divText {
+                        font-size: 1.6rem;
+                    }
+                    .index__sectionTres-button {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+    //INDEX
+    //PROPIEDADES
+    .propiedades {
+        .propiedades__sectionDos {
+            .propiedades__sectionDos-divs {
+                .propiedades__sectionDos-div {
+                    width: 250px;
+                    .propiedades__sectionDos-imgDiv {
+                        .propiedades__sectionDos-img {
+                            height: 175px;
+                        }
+                        .propiedades__sectionDos-operacion {
+                            font-size: 1.2rem;
+                        } 
+                    }
+                    .propiedades__sectionDos-textDiv {
+                        .propiedades__sectionDos-textTitle {
+                            font-size: 1.6rem;
+                        }
+                        .propiedades__sectionDos-text {
+                            font-size: 1.4rem;
+                        }
+                    }
+                    .propiedades__sectionDos-buttonDiv{
+                        .propiedades__sectionDos-button {
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //NOSOTROS
+    .sobrenos {
+        .sobrenos__sectionUno {
+            margin: 20px 50px;
+            .sobrenos__sectionUno-title {
+                font-size: 2.6rem;
+            }
+            .sobrenos__sectionUno-text {
+                font-size: 1.6rem;
+            }
+        }
+        .sobrenos__sectionDos {
+            .sobrenos__sectionDos-div {
+                .sobrenos__sectionDos-text {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+        .sobrenos__sectionTres {
+            .sobrenos__sectionTres-title {
+                font-size: 2.6rem;
+            }
+            .servicios {
+                .servicios__div {
+                    .servicios__img {
+                        height: 175px;
+                    }
+                    .servicios__container {
+                        height: 260px;
+                        .servicios__title {
+                            font-size: 1.8rem;
+                        }
+                        .servicios__text {
+                            font-size: 1.6rem;
+                        }
+                    }
+                }    
+            }
+        }
+    }
+    //NOSOTROS
+    //CONTACTO
+    .contacto {
+        padding: 20px 0px;
+        .contacto__sectionUno {
+            width: 300px;
+            .contacto__sectionUno-title {
+                font-size: 2.2rem;
+            }
+            .contacto__sectionUno-label {
+                font-size: 1.6rem;
+            }
+            .contacto__sectionUno-text {
+                font-size: 1.4rem;
+            }
+        }
+        .contacto__sectionDos {
+            width: 350px;
+            .contacto__form {
+                .contacto__form-title {
+                    font-size: 2.2rem;
+                }
+                .contacto__form-subtitle {
+                    font-size: 1.6rem;
+                }
+                .contacto__form-group {
+                    .contacto__control {
+                        font-size: 1.4rem;
+                    }
+                }  
+                .contacto__submit {
+                    .contacto__submit-text{
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+  //CONTACTO
+}
+
+@media (min-width: 1024px) {
+        //HEADER
+        .header {
+            .header__nav {
+                margin-left: 30px;
+                .header__nav-logo {
+                    height: 75px;
+                }
+                .header__nav-list {
+                    .header__nav-text {
+                        font-size: 1.8rem;
+                        margin: 0px 10px;
+                        transition: 0.5s;
+                        &:hover {
+                            transform: scale(1.05);
+                            border-bottom: 2px solid $color-primario;
+                        }
+                    }
+                }
+            }
+        }
+        //HEADER
+        //FOOTER    
+        .footer {
+            .footer__div {
+                .footer__item-nav {
+                    .footer__nav-list {
+                        .footer__nav-item {
+                            margin-bottom: 5px;
+                            .footer__nav-text {
+                                font-size: 1.6rem;
+                            }
+                        }
+                    }
+                }
+                .footer__item-contacto {
+                    .footer__contacto-list {
+                        .footer__contacto-item {
+                            .footer__contacto-text {
+                                font-size: 1.6rem;
+                            }
+                        }
+                    }
+                }
+                .footer__copyright {
+                    font-size: 1.4rem;
+                }
+            }   
+        }
+        //INDEX
+        .index {
+            .index__sectionUno {
+                height: 500px;
+                .index__sectionUno-title {
+                    font-size: 2.6rem;
+                }
+                .index__form {
+                    .index__form-group {
+                        .index__form-input {
+                            font-size: 1.8rem;
+                            .index__form-text {
+                                font-size: 1.8rem;
+                            }
+                        }
+                    }
+                }
+                .index__sectionUno-foot {
+                    .index__sectionUno-text {
+                        font-size: 1.8em;
+                    }
+                }
+            }
+            .index__sectionDos {
+                .index__sectionDos-title {
+                    font-size: 2.6rem;
+                }
+                .index__sectionDos-divs {
+                    margin-top: 20px;
+                    .index__sectionDos-div {
+                        width: 280px;
+                        .index__sectionDos-imgDiv {
+                            .index__sectionDos-img {
+                                height: 200px;
+                            }
+                            .index__sectionDos-operacion {
+                                font-size: 1.4rem;
+                            } 
+                        }
+                        .index__sectionDos-textDiv {
+                            .index__sectionDos-textTitle {
+                                font-size: 2rem;
+                            }
+                            .index__sectionDos-text {
+                                font-size: 1.6rem;
+                            }
+                        }
+                        .index__sectionDos-buttonDiv{
+                            .index__sectionDos-button {
+                                font-size: 1.6rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .index__sectionTres {
+                .index__sectionTres-title {
+                    font-size: 2.6rem;
+                }
+                .index__sectionTres-subtitle {
+                    font-size: 2.4rem;
+                }
+                .index__sectionTres-divs {
+                    .index__sectionTres-div {
+                        width: 280px;
+                        height: 300px;
+                        .index__sectionTres-divTitle {
+                            font-size: 2rem;
+                        }
+                        .index__sectionTres-divText {
+                            font-size: 1.6rem;
+                        }
+                        .index__sectionTres-button {
+                            font-size: 1.6rem;
+                        }
+                    }
+                }
+            }
+        }
+        //INDEX
+        //PROPIEDADES
+        .propiedades {
+            display: flex;
+            flex-direction: row;
+            .propiedades__sectionUno {
+                width: 150%;
+                margin: 20px 0px;
+                .propiedades__form {
+                    width: 90%;
+                    .propiedades__form-divRow {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    .propiedades__form-div {
+                        .propiedades__title {
+                            font-size: 2.6rem;
+                        }
+                        .propiedades__form-group {
+                            text-align: center;
+                            .propiedades__form-label {
+                                font-size: 2rem;
+                            }
+                            .propiedades__form-input {
+                                .propiedades__form-text {
+                                    font-size: 1.6rem;
+                                }
+                            }
+                            .propiedades__form-sublabel {
+                                font-size: 1.8rem;
+                            }
+                            .propiedades__acordion {
+                                .propiedades__acordion-title {
+                                    .propiedades__acordion-button {
+                                        font-size: 1.8rem;
+                                    }
+                                }
+                                .propiedades__accordion-item {
+                                    .propiedades__list {
+                                        .propiedades__list-item {
+                                            .propiedades__list-button {
+                                                font-size: 1.6rem;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .propiedades__submit {
+                        .propiedades__submit-text {
+                            font-size: 1.8rem;
+                        }
+                    }
+                    .propiedades__reset {
+                        .propiedades__reset-text {
+                            font-size: 1.6rem;
+                            
+                        }
+                    }
+                }
+            }
+            .propiedades__sectionDos {
+                margin: 20px 0px;
+                .propiedades__sectionDos-divs {
+                    .propiedades__sectionDos-div {
+                        width: 280px;
+                        .propiedades__sectionDos-imgDiv {
+                            .propiedades__sectionDos-img {
+                                height: 200px;
+                            }
+                            .propiedades__sectionDos-operacion {
+                                font-size: 1.4rem;
+                            } 
+                        }
+                        .propiedades__sectionDos-textDiv {
+                            .propiedades__sectionDos-textTitle {
+                                font-size: 1.8rem;
+                            }
+                            .propiedades__sectionDos-text {
+                                font-size: 1.6rem;
+                            }
+                        }
+                        .propiedades__sectionDos-buttonDiv{
+                            .propiedades__sectionDos-button {
+                                font-size: 1.6rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        //NOSOTROS
+        .sobrenos {
+            .sobrenos__sectionUno {
+                margin: 20px 80px;
+                .sobrenos__sectionUno-title {
+                    font-size: 2.8rem;
+                }
+                .sobrenos__sectionUno-text {
+                    font-size: 1.8rem;
+                }
+            }
+            .sobrenos__sectionDos {
+                .sobrenos__sectionDos-div {
+                    .sobrenos__sectionDos-text {
+                        font-size: 2rem;
+                    }
+                }
+            }
+            .sobrenos__sectionTres {
+                .sobrenos__sectionTres-title {
+                    font-size: 2.8rem;
+                }
+                .servicios {
+                    .servicios__div {
+                        .servicios__container {
+                            height: 350px;
+                            .servicios__title {
+                                font-size: 2rem;
+                            }
+                            .servicios__text {
+                                font-size: 1.8rem;
+                            }
+                        }
+                    }    
+                }
+            }
+        }
+        //NOSOTROS
+        //CONTACTO
+        .contacto {
+            padding: 40px 0px;
+            .contacto__sectionUno {
+                width: 400px;
+                .contacto__sectionUno-title {
+                    font-size: 2.6rem;
+                }
+                .contacto__sectionUno-label {
+                    font-size: 1.8rem;
+                }
+                .contacto__sectionUno-text {
+                    font-size: 1.6rem;
+                }
+            }
+            .contacto__sectionDos {
+                width: 500px;
+                .contacto__form {
+                    .contacto__form-title {
+                        font-size: 2.6rem;
+                    }
+                    .contacto__form-subtitle {
+                        font-size: 1.8rem;
+                    }
+                    .contacto__form-group {
+                        .contacto__control {
+                            font-size: 1.6rem;
+                        }
+                    }  
+                    .contacto__submit {
+                        .contacto__submit-text{
+                            font-size: 1.8rem;
+                        }
+                    }
+                }
+            }
+        }
+      //CONTACTO
+}

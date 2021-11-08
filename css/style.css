@@ -1,0 +1,937 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif; }
+
+html {
+  font-size: 62.5%; }
+
+.header {
+  border-top: 4px solid #0169b5; }
+  .header .header__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px; }
+    .header .header__nav .header__nav-logo {
+      height: 55px; }
+    .header .header__nav .header__nav-button {
+      border: none; }
+    .header .header__nav .header__nav-list .header__nav-text {
+      font-size: 1.4rem;
+      color: #3e3e3e;
+      text-align: center; }
+      .header .header__nav .header__nav-list .header__nav-text--activo {
+        font-weight: bold; }
+
+.footer {
+  background-color: #fff; }
+  .footer .footer__div {
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid #e7e7e7; }
+    .footer .footer__div .footer__item-redes .footer__redes-list {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 8px;
+      padding: 0; }
+      .footer .footer__div .footer__item-redes .footer__redes-list .footer__redes-item {
+        list-style: none;
+        text-decoration: none;
+        margin: 0px 15px; }
+        .footer .footer__div .footer__item-redes .footer__redes-list .footer__redes-item .footer__redes-logo {
+          height: 30px;
+          width: 30px; }
+    .footer .footer__div .footer__item-nav .footer__nav-list {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 5px;
+      padding: 0; }
+      .footer .footer__div .footer__item-nav .footer__nav-list .footer__nav-item {
+        list-style: none; }
+        .footer .footer__div .footer__item-nav .footer__nav-list .footer__nav-item .footer__nav-text {
+          font-size: 1.2rem;
+          padding: 1px 5px;
+          text-decoration: none;
+          color: #272727;
+          font-weight: 500; }
+          .footer .footer__div .footer__item-nav .footer__nav-list .footer__nav-item .footer__nav-text--activo {
+            font-weight: bold;
+            border-bottom: #0169b5 1px solid; }
+    .footer .footer__div .footer__item-contacto .footer__contacto-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 5px;
+      padding: 0; }
+      .footer .footer__div .footer__item-contacto .footer__contacto-list .footer__contacto-item {
+        list-style: none; }
+        .footer .footer__div .footer__item-contacto .footer__contacto-list .footer__contacto-item .footer__contacto-text {
+          font-size: 1.2rem;
+          color: #272727; }
+    .footer .footer__div .footer__copyright {
+      font-size: 1rem;
+      font-weight: 500;
+      margin: 10px auto; }
+
+.index .index__sectionUno {
+  background-image: url(../img/index/bg.jpg);
+  height: 300px;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  box-shadow: 0 1px 2px 2px #d0cfcf;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px; }
+  .index .index__sectionUno .index__sectionUno-title {
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    margin-top: 4rem; }
+  .index .index__sectionUno .index__form-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .index .index__sectionUno .index__form-div .index__form .index__form-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+    .index .index__sectionUno .index__form-div .index__form .index__form-group {
+      padding: 2px;
+      margin-bottom: 5px;
+      display: flex;
+      justify-content: center; }
+      .index .index__sectionUno .index__form-div .index__form .index__form-group .index__form-input, .index .index__sectionUno .index__form-div .index__form .index__form-group .index__form-submit {
+        display: block;
+        width: 100%;
+        padding: .5rem;
+        font-size: 1.2rem;
+        color: #495057;
+        background-color: white;
+        border: 1px solid #ced4da;
+        border-radius: 2.5px; }
+        .index .index__sectionUno .index__form-div .index__form .index__form-group .index__form-input .index__form-text, .index .index__sectionUno .index__form-div .index__form .index__form-group .index__form-submit .index__form-text {
+          font-size: 1.2rem;
+          color: #757575;
+          text-align: center; }
+      .index .index__sectionUno .index__form-div .index__form .index__form-group .index__form-submit {
+        width: 50%;
+        color: white;
+        background-color: #0169b5;
+        font-size: 1.4rem;
+        font-weight: bold; }
+  .index .index__sectionUno .index__sectionUno-foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5px; }
+    .index .index__sectionUno .index__sectionUno-foot .index__sectionUno-text, .index .index__sectionUno .index__sectionUno-foot .index__sectionUno-button {
+      font-size: 1.2rem;
+      color: white;
+      margin-right: 5px;
+      align-self: baseline; }
+    .index .index__sectionUno .index__sectionUno-foot .index__sectionUno-button {
+      background-color: transparent;
+      border: white 1px solid;
+      text-decoration: none;
+      padding: 2px;
+      border-radius: 2.5px;
+      align-self: baseline; }
+
+.index .index__sectionDos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto; }
+  .index .index__sectionDos .index__sectionDos-title {
+    font-size: 2.2rem; }
+  .index .index__sectionDos .index__sectionDos-divs {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; }
+    .index .index__sectionDos .index__sectionDos-divs .index__sectionDos-div {
+      border: 1px solid #e7e7e7;
+      background-color: #fff;
+      border-radius: 4px;
+      text-align: center;
+      box-shadow: 0 2px 3px 0 #9d9d9d;
+      margin: 10px 40px;
+      width: 230px; }
+      .index .index__sectionDos .index__sectionDos-divs .index__sectionDos-div .index__sectionDos-imgDiv {
+        position: relative; }
+        .index .index__sectionDos .index__sectionDos-divs .index__sectionDos-div .index__sectionDos-imgDiv .index__sectionDos-img {
+          height: 150px;
+          width: 100%;
+          background-size: cover;
+          background-position: 100%;
+          background-repeat: no-repeat;
+          border-radius: 4px;
+          z-index: 1; }
+        .index .index__sectionDos .index__sectionDos-divs .index__sectionDos-div .index__sectionDos-imgDiv .index__sectionDos-operacion {
+          position: absolute;
+          top: 0;
+          right: 0;
+          z-index: 2;
+          color: #fff;
+          display: inline-block;
+          padding: 1px 10px;
+          background-color: rgba(74, 74, 76, 0.7);
+          border-radius: 2px;
+          margin-top: 10px;
+          margin-right: 10px;
+          font-size: 1rem; }
+      .index .index__sectionDos .index__sectionDos-divs .index__sectionDos-div .index__sectionDos-textDiv {
+        padding: 5px; }
+        .index .index__sectionDos .index__sectionDos-divs .index__sectionDos-div .index__sectionDos-textDiv .index__sectionDos-textTitle {
+          font-size: 1.4rem;
+          margin: 3px 0px 5px 3px;
+          color: #7E7E7E;
+          text-transform: uppercase;
+          text-align: center; }
+        .index .index__sectionDos .index__sectionDos-divs .index__sectionDos-div .index__sectionDos-textDiv .index__sectionDos-text {
+          font-size: 1.2rem;
+          margin: 5px 10px;
+          text-align: left;
+          color: #272727; }
+          .index .index__sectionDos .index__sectionDos-divs .index__sectionDos-div .index__sectionDos-textDiv .index__sectionDos-text--bold {
+            font-weight: bold; }
+      .index .index__sectionDos .index__sectionDos-divs .index__sectionDos-div .index__sectionDos-buttonDiv {
+        background-color: #0169b5;
+        border-radius: 4px;
+        padding: 3px;
+        margin: 5px 10px; }
+        .index .index__sectionDos .index__sectionDos-divs .index__sectionDos-div .index__sectionDos-buttonDiv .index__sectionDos-button {
+          font-size: 1.2rem;
+          font-weight: bold;
+          color: white;
+          text-decoration: none; }
+
+.index .index__sectionTres {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto; }
+  .index .index__sectionTres .index__sectionTres-title {
+    font-size: 2.2rem; }
+  .index .index__sectionTres .index__sectionTres-subtitle {
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center; }
+  .index .index__sectionTres .index__sectionTres-divs {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center; }
+    .index .index__sectionTres .index__sectionTres-divs .index__sectionTres-div {
+      border: 1px solid #e7e7e7;
+      background-color: #fff;
+      border-radius: 4px;
+      text-align: center;
+      box-shadow: 0 2px 3px 0 #9d9d9d;
+      margin: 10px 40px;
+      padding: 5px 5px 10px 5px;
+      width: 230px; }
+      .index .index__sectionTres .index__sectionTres-divs .index__sectionTres-div .index__sectionTres-divTitle {
+        font-size: 1.6rem;
+        margin: 8px;
+        padding-bottom: 5px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        border-bottom: 2px solid #0169b5; }
+      .index .index__sectionTres .index__sectionTres-divs .index__sectionTres-div .index__sectionTres-divText {
+        font-size: 1.4rem;
+        margin: 10px 8px 15px 8px;
+        color: #3e3e3e; }
+      .index .index__sectionTres .index__sectionTres-divs .index__sectionTres-div .index__sectionTres-button {
+        background-color: #0169b5;
+        color: white;
+        font-size: 1.4rem;
+        font-weight: bold;
+        border-radius: 4px;
+        margin: 10px auto;
+        padding: 5px;
+        text-decoration: none; }
+
+.propiedades {
+  border-top: 2px solid #e7e7e7; }
+  .propiedades .propiedades__sectionUno {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .propiedades .propiedades__sectionUno .propiedades__form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: #0169b5 3px solid;
+      border-radius: 4px;
+      background-color: #fff;
+      box-shadow: 0 2px 3px 0 #9d9d9d;
+      padding: 3px;
+      width: 280px; }
+      .propiedades .propiedades__sectionUno .propiedades__form .propiedades__form-div {
+        width: 100%; }
+        .propiedades .propiedades__sectionUno .propiedades__form .propiedades__form-div .propiedades__title {
+          font-size: 2rem;
+          font-weight: 600;
+          text-align: center;
+          border-bottom: 2px solid #0169b5;
+          padding: 2px; }
+        .propiedades .propiedades__sectionUno .propiedades__form .propiedades__form-div .propiedades__form-group {
+          display: flex;
+          flex-direction: column;
+          width: 100%; }
+          .propiedades .propiedades__sectionUno .propiedades__form .propiedades__form-div .propiedades__form-group .propiedades__form-label {
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: #3e3e3e;
+            padding: 2px;
+            margin: 0px; }
+          .propiedades .propiedades__sectionUno .propiedades__form .propiedades__form-div .propiedades__form-group .propiedades__form-input {
+            padding: 2px;
+            border-radius: 4px;
+            border: 2px solid #0169b5;
+            text-align: center; }
+            .propiedades .propiedades__sectionUno .propiedades__form .propiedades__form-div .propiedades__form-group .propiedades__form-input .propiedades__form-text {
+              font-size: 1rem;
+              color: #3e3e3e;
+              font-weight: 500; }
+          .propiedades .propiedades__sectionUno .propiedades__form .propiedades__form-div .propiedades__form-group .propiedades__form-sublabel {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #3e3e3e; }
+          .propiedades .propiedades__sectionUno .propiedades__form .propiedades__form-div .propiedades__form-group .propiedades__precio {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start; }
+            .propiedades .propiedades__sectionUno .propiedades__form .propiedades__form-div .propiedades__form-group .propiedades__precio .propiedades__precio-monto {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              width: 50%; }
+          .propiedades .propiedades__sectionUno .propiedades__form .propiedades__form-div .propiedades__form-group .propiedades__form-radio {
+            padding: 5px; }
+          .propiedades .propiedades__sectionUno .propiedades__form .propiedades__form-div .propiedades__form-group .propiedades__ambiente {
+            display: flex;
+            flex-direction: row; }
+            .propiedades .propiedades__sectionUno .propiedades__form .propiedades__form-div .propiedades__form-group .propiedades__ambiente .propiedades__ambiente-div {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              width: 50%; }
+          .propiedades .propiedades__sectionUno .propiedades__form .propiedades__form-div .propiedades__form-group .propiedades__acordion {
+            display: flex;
+            flex-direction: column;
+            align-items: center; }
+            .propiedades .propiedades__sectionUno .propiedades__form .propiedades__form-div .propiedades__form-group .propiedades__acordion .propiedades__acordion-title .propiedades__acordion-button {
+              background-color: #fff;
+              border: none;
+              font-size: 1.2rem;
+              font-weight: 500;
+              color: #3e3e3e;
+              margin: 5px auto; }
+            .propiedades .propiedades__sectionUno .propiedades__form .propiedades__form-div .propiedades__form-group .propiedades__acordion .propiedades__accordion-item {
+              display: flex;
+              flex-direction: column;
+              width: 100%; }
+              .propiedades .propiedades__sectionUno .propiedades__form .propiedades__form-div .propiedades__form-group .propiedades__acordion .propiedades__accordion-item .propiedades__accordion-subitem {
+                display: flex;
+                flex-direction: row; }
+                .propiedades .propiedades__sectionUno .propiedades__form .propiedades__form-div .propiedades__form-group .propiedades__acordion .propiedades__accordion-item .propiedades__accordion-subitem .propiedades__superficie-div {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center; }
+                  .propiedades .propiedades__sectionUno .propiedades__form .propiedades__form-div .propiedades__form-group .propiedades__acordion .propiedades__accordion-item .propiedades__accordion-subitem .propiedades__superficie-div .propiedades__form-superficie {
+                    padding: 2px;
+                    border-radius: 4px;
+                    border: 2px solid #0169b5;
+                    text-align: center;
+                    width: 80%; }
+              .propiedades .propiedades__sectionUno .propiedades__form .propiedades__form-div .propiedades__form-group .propiedades__acordion .propiedades__accordion-item .propiedades__list {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                border: 2px solid #0169b5;
+                border-radius: 4px;
+                padding: 0px;
+                margin: 0px; }
+                .propiedades .propiedades__sectionUno .propiedades__form .propiedades__form-div .propiedades__form-group .propiedades__acordion .propiedades__accordion-item .propiedades__list .propiedades__list-item {
+                  list-style: none; }
+                  .propiedades .propiedades__sectionUno .propiedades__form .propiedades__form-div .propiedades__form-group .propiedades__acordion .propiedades__accordion-item .propiedades__list .propiedades__list-item .propiedades__list-button {
+                    border: none;
+                    background-color: #fff;
+                    font-size: 1.2rem;
+                    color: #3e3e3e; }
+                    .propiedades .propiedades__sectionUno .propiedades__form .propiedades__form-div .propiedades__form-group .propiedades__acordion .propiedades__accordion-item .propiedades__list .propiedades__list-item .propiedades__list-button:focus {
+                      font-weight: 700; }
+      .propiedades .propiedades__sectionUno .propiedades__form .propiedades__submit {
+        margin-top: 5px; }
+        .propiedades .propiedades__sectionUno .propiedades__form .propiedades__submit .propiedades__submit-text {
+          font-size: 1.4rem;
+          font-weight: bold;
+          font-family: 'Poppins', sans-serif;
+          background-color: #0169b5;
+          color: white;
+          border: none;
+          padding: 5px;
+          border-radius: 4px;
+          text-align: center; }
+      .propiedades .propiedades__sectionUno .propiedades__form .propiedades__reset .propiedades__reset-text {
+        background-color: #fff;
+        border: none;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: #3e3e3e;
+        border-bottom: #3e3e3e solid 1.5px;
+        margin: 5px auto; }
+  .propiedades .propiedades__sectionDos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto; }
+    .propiedades .propiedades__sectionDos .propiedades__sectionDos-divs {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center; }
+      .propiedades .propiedades__sectionDos .propiedades__sectionDos-divs .propiedades__sectionDos-div {
+        border: 1px solid #e7e7e7;
+        background-color: #fff;
+        border-radius: 4px;
+        text-align: center;
+        box-shadow: 0 2px 3px 0 #9d9d9d;
+        margin: 10px 40px;
+        width: 230px; }
+        .propiedades .propiedades__sectionDos .propiedades__sectionDos-divs .propiedades__sectionDos-div .propiedades__sectionDos-imgDiv {
+          position: relative; }
+          .propiedades .propiedades__sectionDos .propiedades__sectionDos-divs .propiedades__sectionDos-div .propiedades__sectionDos-imgDiv .propiedades__sectionDos-img {
+            height: 150px;
+            width: 100%;
+            background-size: cover;
+            background-position: 100%;
+            background-repeat: no-repeat;
+            border-radius: 4px;
+            z-index: 1; }
+          .propiedades .propiedades__sectionDos .propiedades__sectionDos-divs .propiedades__sectionDos-div .propiedades__sectionDos-imgDiv .propiedades__sectionDos-operacion {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 2;
+            color: #fff;
+            display: inline-block;
+            padding: 1px 10px;
+            background-color: rgba(74, 74, 76, 0.7);
+            border-radius: 2px;
+            margin-top: 10px;
+            margin-right: 10px;
+            font-size: 1rem; }
+        .propiedades .propiedades__sectionDos .propiedades__sectionDos-divs .propiedades__sectionDos-div .propiedades__sectionDos-textDiv {
+          padding: 5px; }
+          .propiedades .propiedades__sectionDos .propiedades__sectionDos-divs .propiedades__sectionDos-div .propiedades__sectionDos-textDiv .propiedades__sectionDos-textTitle {
+            font-size: 1.4rem;
+            margin: 3px 0px 5px 3px;
+            color: #7E7E7E;
+            text-transform: uppercase;
+            text-align: center; }
+          .propiedades .propiedades__sectionDos .propiedades__sectionDos-divs .propiedades__sectionDos-div .propiedades__sectionDos-textDiv .propiedades__sectionDos-text {
+            font-size: 1.2rem;
+            margin: 5px 10px;
+            text-align: left;
+            color: #272727; }
+            .propiedades .propiedades__sectionDos .propiedades__sectionDos-divs .propiedades__sectionDos-div .propiedades__sectionDos-textDiv .propiedades__sectionDos-text--bold {
+              font-weight: bold; }
+        .propiedades .propiedades__sectionDos .propiedades__sectionDos-divs .propiedades__sectionDos-div .propiedades__sectionDos-buttonDiv {
+          background-color: #0169b5;
+          border-radius: 4px;
+          padding: 3px;
+          margin: 5px 10px; }
+          .propiedades .propiedades__sectionDos .propiedades__sectionDos-divs .propiedades__sectionDos-div .propiedades__sectionDos-buttonDiv .propiedades__sectionDos-button {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none; }
+
+.sobrenos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 2px solid #e7e7e7; }
+  .sobrenos .sobrenos__sectionUno {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px; }
+    .sobrenos .sobrenos__sectionUno .sobrenos__sectionUno-title {
+      font-size: 2.4rem;
+      margin-bottom: .5rem; }
+    .sobrenos .sobrenos__sectionUno .sobrenos__sectionUno-text {
+      font-size: 1.4rem;
+      margin: 5px;
+      color: #3e3e3e; }
+  .sobrenos .sobrenos__sectionDos {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center; }
+    .sobrenos .sobrenos__sectionDos .sobrenos__sectionDos-div {
+      margin: 1rem; }
+      .sobrenos .sobrenos__sectionDos .sobrenos__sectionDos-div .sobrenos__sectionDos-img {
+        height: 200px;
+        border-radius: 50%;
+        box-shadow: 0 2px 3px 0 #9d9d9d;
+        margin: 5px 20px; }
+      .sobrenos .sobrenos__sectionDos .sobrenos__sectionDos-div .sobrenos__sectionDos-text {
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.6rem;
+        color: #3e3e3e; }
+  .sobrenos .sobrenos__sectionTres {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .sobrenos .sobrenos__sectionTres .sobrenos__sectionTres-title {
+      font-size: 2.4rem;
+      margin: 10px;
+      text-align: center; }
+    .sobrenos .sobrenos__sectionTres .servicios {
+      display: flex;
+      flex-flow: wrap row;
+      justify-content: center; }
+      .sobrenos .sobrenos__sectionTres .servicios .servicios__div {
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column; }
+        .sobrenos .sobrenos__sectionTres .servicios .servicios__div .servicios__img {
+          height: 150px;
+          margin-bottom: 10px; }
+        .sobrenos .sobrenos__sectionTres .servicios .servicios__div .servicios__container {
+          border: 1px solid #e7e7e7;
+          background-color: #fff;
+          border-radius: 4px;
+          border: #0169b5 3px solid;
+          text-align: center;
+          box-shadow: 0 2px 3px 0 #9d9d9d;
+          margin: 10px 40px;
+          padding: 5px 5px 10px 5px;
+          width: 230px; }
+          .sobrenos .sobrenos__sectionTres .servicios .servicios__div .servicios__container .servicios__title {
+            font-size: 1.6rem;
+            margin: 8px;
+            padding-bottom: 5px;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-bottom: 2px solid #0169b5; }
+          .sobrenos .sobrenos__sectionTres .servicios .servicios__div .servicios__container .servicios__text {
+            font-size: 1.4rem;
+            margin: 10px 8px 15px 8px;
+            color: #3e3e3e; }
+
+.contacto {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  border-top: 2px solid #e7e7e7;
+  background-image: url(../img/index/bg.jpg);
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: 100%;
+  background-repeat: no-repeat; }
+  .contacto .contacto__sectionUno {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: #0169b5 3px solid;
+    border-radius: 4px;
+    box-shadow: 0 2px 3px 0 #9d9d9d;
+    padding: 3px;
+    margin: 20px;
+    width: 280px;
+    background-color: rgba(255, 255, 255, 0.75); }
+    .contacto .contacto__sectionUno .contacto__sectionUno-title {
+      font-size: 2rem;
+      font-weight: 600;
+      text-align: center;
+      border-bottom: 2px solid #0169b5;
+      padding: 2px; }
+    .contacto .contacto__sectionUno .contacto__sectionUno-label {
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: #3e3e3e;
+      margin: 0px; }
+    .contacto .contacto__sectionUno .contacto__sectionUno-text {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #3e3e3e; }
+  .contacto .contacto__sectionDos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: #0169b5 3px solid;
+    border-radius: 4px;
+    box-shadow: 0 2px 3px 0 #9d9d9d;
+    padding: 3px;
+    margin: 20px;
+    width: 280px;
+    background-color: rgba(255, 255, 255, 0.75); }
+    .contacto .contacto__sectionDos .contacto__form .contacto__form-title {
+      font-size: 2rem;
+      font-weight: 600;
+      text-align: center;
+      border-bottom: 2px solid #0169b5;
+      padding: 2px;
+      margin: 0px 5px; }
+    .contacto .contacto__sectionDos .contacto__form .contacto__form-subtitle {
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: #3e3e3e;
+      margin: 0px;
+      text-align: center; }
+    .contacto .contacto__sectionDos .contacto__form .contacto__form-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+      .contacto .contacto__sectionDos .contacto__form .contacto__form-row .contacto__row {
+        width: 50%; }
+    .contacto .contacto__sectionDos .contacto__form .contacto__form-group {
+      margin: .5rem; }
+      .contacto .contacto__sectionDos .contacto__form .contacto__form-group .contacto__control {
+        display: block;
+        width: 100%;
+        padding: 5px;
+        font-size: 1.2rem;
+        color: #495057;
+        background-color: rgba(255, 255, 255, 0.75);
+        border: 1px solid #ced4da;
+        border-radius: .25rem;
+        text-align: center; }
+        .contacto .contacto__sectionDos .contacto__form .contacto__form-group .contacto__control--text {
+          text-align: left; }
+    .contacto .contacto__sectionDos .contacto__form .contacto__form-check {
+      display: flex;
+      flex-direction: row;
+      padding: 5px;
+      width: 100%; }
+    .contacto .contacto__sectionDos .contacto__form .contacto__submit {
+      margin: 5px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      .contacto .contacto__sectionDos .contacto__form .contacto__submit .contacto__submit-text {
+        font-size: 1.4rem;
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+        background-color: #0169b5;
+        color: white;
+        border: none;
+        padding: 5px;
+        border-radius: 4px;
+        text-align: center; }
+
+@media (min-width: 620px) {
+  .propiedades .propiedades__sectionUno .propiedades__form {
+    width: 90%; }
+    .propiedades .propiedades__sectionUno .propiedades__form .propiedades__form-divRow {
+      display: flex;
+      flex-direction: row; }
+    .propiedades .propiedades__sectionUno .propiedades__form .propiedades__form-div .propiedades__title {
+      font-size: 2.2rem; }
+    .propiedades .propiedades__sectionUno .propiedades__form .propiedades__form-div .propiedades__form-group {
+      text-align: center; }
+      .propiedades .propiedades__sectionUno .propiedades__form .propiedades__form-div .propiedades__form-group .propiedades__form-label {
+        font-size: 1.6rem; }
+      .propiedades .propiedades__sectionUno .propiedades__form .propiedades__form-div .propiedades__form-group .propiedades__form-input {
+        margin: 0px 5px; }
+        .propiedades .propiedades__sectionUno .propiedades__form .propiedades__form-div .propiedades__form-group .propiedades__form-input .propiedades__form-text {
+          font-size: 1.2rem; }
+      .propiedades .propiedades__sectionUno .propiedades__form .propiedades__form-div .propiedades__form-group .propiedades__form-sublabel {
+        font-size: 1.4rem; }
+      .propiedades .propiedades__sectionUno .propiedades__form .propiedades__form-div .propiedades__form-group .propiedades__precio {
+        justify-content: center; }
+      .propiedades .propiedades__sectionUno .propiedades__form .propiedades__form-div .propiedades__form-group .propiedades__acordion .propiedades__acordion-title .propiedades__acordion-button {
+        font-size: 1.6rem; }
+      .propiedades .propiedades__sectionUno .propiedades__form .propiedades__form-div .propiedades__form-group .propiedades__acordion .propiedades__accordion-item .propiedades__accordion-subitem {
+        justify-content: center; }
+      .propiedades .propiedades__sectionUno .propiedades__form .propiedades__form-div .propiedades__form-group .propiedades__acordion .propiedades__accordion-item .propiedades__list .propiedades__list-item {
+        list-style: none; }
+        .propiedades .propiedades__sectionUno .propiedades__form .propiedades__form-div .propiedades__form-group .propiedades__acordion .propiedades__accordion-item .propiedades__list .propiedades__list-item .propiedades__list-button {
+          font-size: 1.4rem; }
+    .propiedades .propiedades__sectionUno .propiedades__form .propiedades__submit .propiedades__submit-text {
+      font-size: 1.6rem; }
+    .propiedades .propiedades__sectionUno .propiedades__form .propiedades__reset .propiedades__reset-text {
+      font-size: 1.4rem; } }
+
+@media (min-width: 768px) {
+  .header .header__nav {
+    padding: 15px;
+    margin-left: 20px; }
+    .header .header__nav .header__nav-logo {
+      height: 65px; }
+    .header .header__nav .header__nav-list .header__nav-text {
+      font-size: 1.6rem; }
+  .footer .footer__div {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    .footer .footer__div .footer__item-redes {
+      order: 1;
+      width: 33%; }
+      .footer .footer__div .footer__item-redes .footer__redes-list .footer__redes-item .footer__redes-logo {
+        height: 35px;
+        width: 35px; }
+    .footer .footer__div .footer__item-nav {
+      order: -1;
+      width: 33%; }
+      .footer .footer__div .footer__item-nav .footer__nav-list {
+        flex-direction: column;
+        align-items: center; }
+        .footer .footer__div .footer__item-nav .footer__nav-list .footer__nav-item {
+          margin-bottom: 2.5px; }
+          .footer .footer__div .footer__item-nav .footer__nav-list .footer__nav-item .footer__nav-text {
+            font-size: 1.4rem; }
+    .footer .footer__div .footer__item-contacto {
+      order: 2;
+      width: 33%; }
+      .footer .footer__div .footer__item-contacto .footer__contacto-list .footer__contacto-item .footer__contacto-text {
+        font-size: 1.4rem; }
+    .footer .footer__div .footer__copyright {
+      font-size: 1.2rem; }
+  .index .index__sectionUno {
+    height: 400px;
+    justify-content: center;
+    align-items: center; }
+    .index .index__sectionUno .index__sectionUno-title {
+      font-size: 2.2rem; }
+    .index .index__sectionUno .index__form {
+      display: flex;
+      flex-direction: row; }
+      .index .index__sectionUno .index__form .index__form-group .index__form-input, .index .index__sectionUno .index__form-div .index__form .index__form-group .index__form-submit {
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.4rem; }
+        .index .index__sectionUno .index__form .index__form-group .index__form-input .index__form-text, .index .index__sectionUno .index__form-div .index__form .index__form-group .index__form-submit .index__form-text {
+          font-size: 1.4rem; }
+      .index .index__sectionUno .index__form .index__form-group .index__form-submit {
+        width: 100%; }
+    .index .index__sectionUno .index__sectionUno-foot .index__sectionUno-text, .index .index__sectionUno .index__sectionUno-foot .index__sectionUno-button {
+      font-size: 1.4rem; }
+  .index .index__sectionDos .index__sectionDos-title {
+    font-size: 2.4rem; }
+  .index .index__sectionDos .index__sectionDos-divs .index__sectionDos-div {
+    width: 250px; }
+    .index .index__sectionDos .index__sectionDos-divs .index__sectionDos-div .index__sectionDos-imgDiv .index__sectionDos-img {
+      height: 175px; }
+    .index .index__sectionDos .index__sectionDos-divs .index__sectionDos-div .index__sectionDos-imgDiv .index__sectionDos-operacion {
+      font-size: 1.2rem; }
+    .index .index__sectionDos .index__sectionDos-divs .index__sectionDos-div .index__sectionDos-textDiv .index__sectionDos-textTitle {
+      font-size: 1.6rem; }
+    .index .index__sectionDos .index__sectionDos-divs .index__sectionDos-div .index__sectionDos-textDiv .index__sectionDos-text {
+      font-size: 1.4rem; }
+    .index .index__sectionDos .index__sectionDos-divs .index__sectionDos-div .index__sectionDos-buttonDiv .index__sectionDos-button {
+      font-size: 1.4rem; }
+  .index .index__sectionTres .index__sectionTres-title {
+    font-size: 2.4rem; }
+  .index .index__sectionTres .index__sectionTres-subtitle {
+    font-size: 2rem; }
+  .index .index__sectionTres .index__sectionTres-divs .index__sectionTres-div .index__sectionTres-divTitle {
+    font-size: 1.8rem; }
+  .index .index__sectionTres .index__sectionTres-divs .index__sectionTres-div .index__sectionTres-divText {
+    font-size: 1.6rem; }
+  .index .index__sectionTres .index__sectionTres-divs .index__sectionTres-div .index__sectionTres-button {
+    font-size: 1.6rem; }
+  .propiedades .propiedades__sectionDos .propiedades__sectionDos-divs .propiedades__sectionDos-div {
+    width: 250px; }
+    .propiedades .propiedades__sectionDos .propiedades__sectionDos-divs .propiedades__sectionDos-div .propiedades__sectionDos-imgDiv .propiedades__sectionDos-img {
+      height: 175px; }
+    .propiedades .propiedades__sectionDos .propiedades__sectionDos-divs .propiedades__sectionDos-div .propiedades__sectionDos-imgDiv .propiedades__sectionDos-operacion {
+      font-size: 1.2rem; }
+    .propiedades .propiedades__sectionDos .propiedades__sectionDos-divs .propiedades__sectionDos-div .propiedades__sectionDos-textDiv .propiedades__sectionDos-textTitle {
+      font-size: 1.6rem; }
+    .propiedades .propiedades__sectionDos .propiedades__sectionDos-divs .propiedades__sectionDos-div .propiedades__sectionDos-textDiv .propiedades__sectionDos-text {
+      font-size: 1.4rem; }
+    .propiedades .propiedades__sectionDos .propiedades__sectionDos-divs .propiedades__sectionDos-div .propiedades__sectionDos-buttonDiv .propiedades__sectionDos-button {
+      font-size: 1.4rem; }
+  .sobrenos .sobrenos__sectionUno {
+    margin: 20px 50px; }
+    .sobrenos .sobrenos__sectionUno .sobrenos__sectionUno-title {
+      font-size: 2.6rem; }
+    .sobrenos .sobrenos__sectionUno .sobrenos__sectionUno-text {
+      font-size: 1.6rem; }
+  .sobrenos .sobrenos__sectionDos .sobrenos__sectionDos-div .sobrenos__sectionDos-text {
+    font-size: 1.8rem; }
+  .sobrenos .sobrenos__sectionTres .sobrenos__sectionTres-title {
+    font-size: 2.6rem; }
+  .sobrenos .sobrenos__sectionTres .servicios .servicios__div .servicios__img {
+    height: 175px; }
+  .sobrenos .sobrenos__sectionTres .servicios .servicios__div .servicios__container {
+    height: 260px; }
+    .sobrenos .sobrenos__sectionTres .servicios .servicios__div .servicios__container .servicios__title {
+      font-size: 1.8rem; }
+    .sobrenos .sobrenos__sectionTres .servicios .servicios__div .servicios__container .servicios__text {
+      font-size: 1.6rem; }
+  .contacto {
+    padding: 20px 0px; }
+    .contacto .contacto__sectionUno {
+      width: 300px; }
+      .contacto .contacto__sectionUno .contacto__sectionUno-title {
+        font-size: 2.2rem; }
+      .contacto .contacto__sectionUno .contacto__sectionUno-label {
+        font-size: 1.6rem; }
+      .contacto .contacto__sectionUno .contacto__sectionUno-text {
+        font-size: 1.4rem; }
+    .contacto .contacto__sectionDos {
+      width: 350px; }
+      .contacto .contacto__sectionDos .contacto__form .contacto__form-title {
+        font-size: 2.2rem; }
+      .contacto .contacto__sectionDos .contacto__form .contacto__form-subtitle {
+        font-size: 1.6rem; }
+      .contacto .contacto__sectionDos .contacto__form .contacto__form-group .contacto__control {
+        font-size: 1.4rem; }
+      .contacto .contacto__sectionDos .contacto__form .contacto__submit .contacto__submit-text {
+        font-size: 1.6rem; } }
+
+@media (min-width: 1024px) {
+  .header .header__nav {
+    margin-left: 30px; }
+    .header .header__nav .header__nav-logo {
+      height: 75px; }
+    .header .header__nav .header__nav-list .header__nav-text {
+      font-size: 1.8rem;
+      margin: 0px 10px;
+      transition: 0.5s; }
+      .header .header__nav .header__nav-list .header__nav-text:hover {
+        transform: scale(1.05);
+        border-bottom: 2px solid #0169b5; }
+  .footer .footer__div .footer__item-nav .footer__nav-list .footer__nav-item {
+    margin-bottom: 5px; }
+    .footer .footer__div .footer__item-nav .footer__nav-list .footer__nav-item .footer__nav-text {
+      font-size: 1.6rem; }
+  .footer .footer__div .footer__item-contacto .footer__contacto-list .footer__contacto-item .footer__contacto-text {
+    font-size: 1.6rem; }
+  .footer .footer__div .footer__copyright {
+    font-size: 1.4rem; }
+  .index .index__sectionUno {
+    height: 500px; }
+    .index .index__sectionUno .index__sectionUno-title {
+      font-size: 2.6rem; }
+    .index .index__sectionUno .index__form .index__form-group .index__form-input, .index .index__sectionUno .index__form-div .index__form .index__form-group .index__form-submit {
+      font-size: 1.8rem; }
+      .index .index__sectionUno .index__form .index__form-group .index__form-input .index__form-text, .index .index__sectionUno .index__form-div .index__form .index__form-group .index__form-submit .index__form-text {
+        font-size: 1.8rem; }
+    .index .index__sectionUno .index__sectionUno-foot .index__sectionUno-text, .index .index__sectionUno .index__sectionUno-foot .index__sectionUno-button {
+      font-size: 1.8em; }
+  .index .index__sectionDos .index__sectionDos-title {
+    font-size: 2.6rem; }
+  .index .index__sectionDos .index__sectionDos-divs {
+    margin-top: 20px; }
+    .index .index__sectionDos .index__sectionDos-divs .index__sectionDos-div {
+      width: 280px; }
+      .index .index__sectionDos .index__sectionDos-divs .index__sectionDos-div .index__sectionDos-imgDiv .index__sectionDos-img {
+        height: 200px; }
+      .index .index__sectionDos .index__sectionDos-divs .index__sectionDos-div .index__sectionDos-imgDiv .index__sectionDos-operacion {
+        font-size: 1.4rem; }
+      .index .index__sectionDos .index__sectionDos-divs .index__sectionDos-div .index__sectionDos-textDiv .index__sectionDos-textTitle {
+        font-size: 2rem; }
+      .index .index__sectionDos .index__sectionDos-divs .index__sectionDos-div .index__sectionDos-textDiv .index__sectionDos-text {
+        font-size: 1.6rem; }
+      .index .index__sectionDos .index__sectionDos-divs .index__sectionDos-div .index__sectionDos-buttonDiv .index__sectionDos-button {
+        font-size: 1.6rem; }
+  .index .index__sectionTres .index__sectionTres-title {
+    font-size: 2.6rem; }
+  .index .index__sectionTres .index__sectionTres-subtitle {
+    font-size: 2.4rem; }
+  .index .index__sectionTres .index__sectionTres-divs .index__sectionTres-div {
+    width: 280px;
+    height: 300px; }
+    .index .index__sectionTres .index__sectionTres-divs .index__sectionTres-div .index__sectionTres-divTitle {
+      font-size: 2rem; }
+    .index .index__sectionTres .index__sectionTres-divs .index__sectionTres-div .index__sectionTres-divText {
+      font-size: 1.6rem; }
+    .index .index__sectionTres .index__sectionTres-divs .index__sectionTres-div .index__sectionTres-button {
+      font-size: 1.6rem; }
+  .propiedades {
+    display: flex;
+    flex-direction: row; }
+    .propiedades .propiedades__sectionUno {
+      width: 150%;
+      margin: 20px 0px; }
+      .propiedades .propiedades__sectionUno .propiedades__form {
+        width: 90%; }
+        .propiedades .propiedades__sectionUno .propiedades__form .propiedades__form-divRow {
+          display: flex;
+          flex-direction: column; }
+        .propiedades .propiedades__sectionUno .propiedades__form .propiedades__form-div .propiedades__title {
+          font-size: 2.6rem; }
+        .propiedades .propiedades__sectionUno .propiedades__form .propiedades__form-div .propiedades__form-group {
+          text-align: center; }
+          .propiedades .propiedades__sectionUno .propiedades__form .propiedades__form-div .propiedades__form-group .propiedades__form-label {
+            font-size: 2rem; }
+          .propiedades .propiedades__sectionUno .propiedades__form .propiedades__form-div .propiedades__form-group .propiedades__form-input .propiedades__form-text {
+            font-size: 1.6rem; }
+          .propiedades .propiedades__sectionUno .propiedades__form .propiedades__form-div .propiedades__form-group .propiedades__form-sublabel {
+            font-size: 1.8rem; }
+          .propiedades .propiedades__sectionUno .propiedades__form .propiedades__form-div .propiedades__form-group .propiedades__acordion .propiedades__acordion-title .propiedades__acordion-button {
+            font-size: 1.8rem; }
+          .propiedades .propiedades__sectionUno .propiedades__form .propiedades__form-div .propiedades__form-group .propiedades__acordion .propiedades__accordion-item .propiedades__list .propiedades__list-item .propiedades__list-button {
+            font-size: 1.6rem; }
+        .propiedades .propiedades__sectionUno .propiedades__form .propiedades__submit .propiedades__submit-text {
+          font-size: 1.8rem; }
+        .propiedades .propiedades__sectionUno .propiedades__form .propiedades__reset .propiedades__reset-text {
+          font-size: 1.6rem; }
+    .propiedades .propiedades__sectionDos {
+      margin: 20px 0px; }
+      .propiedades .propiedades__sectionDos .propiedades__sectionDos-divs .propiedades__sectionDos-div {
+        width: 280px; }
+        .propiedades .propiedades__sectionDos .propiedades__sectionDos-divs .propiedades__sectionDos-div .propiedades__sectionDos-imgDiv .propiedades__sectionDos-img {
+          height: 200px; }
+        .propiedades .propiedades__sectionDos .propiedades__sectionDos-divs .propiedades__sectionDos-div .propiedades__sectionDos-imgDiv .propiedades__sectionDos-operacion {
+          font-size: 1.4rem; }
+        .propiedades .propiedades__sectionDos .propiedades__sectionDos-divs .propiedades__sectionDos-div .propiedades__sectionDos-textDiv .propiedades__sectionDos-textTitle {
+          font-size: 1.8rem; }
+        .propiedades .propiedades__sectionDos .propiedades__sectionDos-divs .propiedades__sectionDos-div .propiedades__sectionDos-textDiv .propiedades__sectionDos-text {
+          font-size: 1.6rem; }
+        .propiedades .propiedades__sectionDos .propiedades__sectionDos-divs .propiedades__sectionDos-div .propiedades__sectionDos-buttonDiv .propiedades__sectionDos-button {
+          font-size: 1.6rem; }
+  .sobrenos .sobrenos__sectionUno {
+    margin: 20px 80px; }
+    .sobrenos .sobrenos__sectionUno .sobrenos__sectionUno-title {
+      font-size: 2.8rem; }
+    .sobrenos .sobrenos__sectionUno .sobrenos__sectionUno-text {
+      font-size: 1.8rem; }
+  .sobrenos .sobrenos__sectionDos .sobrenos__sectionDos-div .sobrenos__sectionDos-text {
+    font-size: 2rem; }
+  .sobrenos .sobrenos__sectionTres .sobrenos__sectionTres-title {
+    font-size: 2.8rem; }
+  .sobrenos .sobrenos__sectionTres .servicios .servicios__div .servicios__container {
+    height: 350px; }
+    .sobrenos .sobrenos__sectionTres .servicios .servicios__div .servicios__container .servicios__title {
+      font-size: 2rem; }
+    .sobrenos .sobrenos__sectionTres .servicios .servicios__div .servicios__container .servicios__text {
+      font-size: 1.8rem; }
+  .contacto {
+    padding: 40px 0px; }
+    .contacto .contacto__sectionUno {
+      width: 400px; }
+      .contacto .contacto__sectionUno .contacto__sectionUno-title {
+        font-size: 2.6rem; }
+      .contacto .contacto__sectionUno .contacto__sectionUno-label {
+        font-size: 1.8rem; }
+      .contacto .contacto__sectionUno .contacto__sectionUno-text {
+        font-size: 1.6rem; }
+    .contacto .contacto__sectionDos {
+      width: 500px; }
+      .contacto .contacto__sectionDos .contacto__form .contacto__form-title {
+        font-size: 2.6rem; }
+      .contacto .contacto__sectionDos .contacto__form .contacto__form-subtitle {
+        font-size: 1.8rem; }
+      .contacto .contacto__sectionDos .contacto__form .contacto__form-group .contacto__control {
+        font-size: 1.6rem; }
+      .contacto .contacto__sectionDos .contacto__form .contacto__submit .contacto__submit-text {
+        font-size: 1.8rem; } }

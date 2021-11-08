@@ -1,0 +1,242 @@
+.propiedades {
+    border-top: 2px solid #e7e7e7;
+    .propiedades__sectionUno {
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .propiedades__form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: $color-primario 3px solid;
+            border-radius: 4px;
+            background-color: #fff;
+            box-shadow: 0 2px 3px 0 rgb(157, 157, 157);
+            padding: 3px;
+            width: 280px;
+            .propiedades__form-div {
+                width: 100%;
+                .propiedades__title {
+                    font-size: 2rem;
+                    font-weight: 600;
+                    text-align: center;
+                    border-bottom: 2px solid $color-primario;
+                    padding: 2px;
+                }
+                .propiedades__form-group {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    .propiedades__form-label {
+                        font-size: 1.4rem;
+                        font-weight: 500;
+                        color: #3e3e3e;
+                        padding: 2px;
+                        margin: 0px;
+                    }
+                    .propiedades__form-input {
+                        padding: 2px;
+                        border-radius: 4px;
+                        border: 2px solid $color-primario;
+                        text-align: center;
+                        .propiedades__form-text {
+                            font-size: 1rem;
+                            color: #3e3e3e;
+                            font-weight: 500;
+                        }
+                    }
+                    .propiedades__form-sublabel {
+                        font-size: 1.2rem;
+                        font-weight: 500;
+                        color: #3e3e3e;
+                    }
+                    .propiedades__precio {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        .propiedades__precio-monto {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            width: 50%;
+                        }
+                    }
+                    .propiedades__form-radio {
+                        padding: 5px;
+                    }
+                    .propiedades__ambiente {
+                        display: flex;
+                        flex-direction: row;
+                        .propiedades__ambiente-div {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            width: 50%;
+                        }
+                    }
+                    .propiedades__acordion {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .propiedades__acordion-title {
+                            .propiedades__acordion-button {
+                                background-color: #fff;
+                                border: none;
+                                font-size: 1.2rem;
+                                font-weight: 500;
+                                color: #3e3e3e;
+                                margin: 5px auto;
+                            }
+                        }
+                        .propiedades__accordion-item {
+                            display: flex;
+                            flex-direction: column;
+                            width: 100%;
+                            .propiedades__accordion-subitem {
+                                display: flex;
+                                flex-direction: row;
+                                .propiedades__superficie-div {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    .propiedades__form-superficie {
+                                        padding: 2px;
+                                        border-radius: 4px;
+                                        border: 2px solid $color-primario;
+                                        text-align: center;
+                                        width: 80%;
+                                    }
+                                }
+                            }
+                            .propiedades__list {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-around;
+                                border: 2px solid $color-primario;
+                                border-radius: 4px;
+                                padding: 0px;
+                                margin: 0px;
+                                .propiedades__list-item {
+                                    list-style: none;
+                                    .propiedades__list-button {
+                                        border: none;
+                                        background-color: #fff;
+                                        font-size: 1.2rem;
+                                        color: #3e3e3e;
+                                        &:focus {
+                                            font-weight: 700;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .propiedades__submit {
+                margin-top: 5px;
+                .propiedades__submit-text {
+                    font-size: 1.4rem;
+                    font-weight: bold;
+                    font-family: 'Poppins', sans-serif;
+                    background-color: $color-primario;
+                    color: white;
+                    border: none;
+                    padding: 5px;
+                    border-radius: 4px;
+                    text-align: center;
+                }
+            }
+            .propiedades__reset {
+                .propiedades__reset-text {
+                    background-color: #fff;
+                    border: none;
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    color: #3e3e3e;
+                    border-bottom: #3e3e3e solid 1.5px;
+                    margin: 5px auto;
+                    
+                }
+            }
+        }
+    }
+    .propiedades__sectionDos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px auto;
+        .propiedades__sectionDos-divs {
+            display: flex;
+            flex-flow:  row wrap;
+            justify-content: center;
+            .propiedades__sectionDos-div {
+                border: 1px solid #e7e7e7;
+                background-color: #fff;
+                border-radius: 4px;
+                text-align: center;
+                box-shadow: 0 2px 3px 0 rgb(157, 157, 157);
+                margin: 10px 40px;
+                width: 230px;
+                .propiedades__sectionDos-imgDiv {
+                    position: relative;
+                    .propiedades__sectionDos-img {
+                        height: 150px;
+                        width: 100%;
+                        background-size: cover;
+                        background-position: 100%;
+                        background-repeat: no-repeat;
+                        border-radius: 4px;
+                        z-index: 1;
+                    }
+                    .propiedades__sectionDos-operacion {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        z-index: 2;
+                        color: #fff;
+                        display: inline-block;
+                        padding: 1px 10px;
+                        background-color: rgba(74,74,76,0.7);
+                        border-radius: 2px;
+                        margin-top: 10px;
+                        margin-right: 10px;
+                        font-size: 1rem;
+                    } 
+                }
+                .propiedades__sectionDos-textDiv {
+                    padding: 5px;
+                    .propiedades__sectionDos-textTitle {
+                        font-size: 1.4rem;
+                        margin: 3px 0px 5px 3px;
+                        color: #7E7E7E;
+                        text-transform: uppercase;
+                        text-align: center;
+                    }
+                    .propiedades__sectionDos-text {
+                        font-size: 1.2rem;
+                        margin: 5px 10px;
+                        text-align: left;
+                        color: #272727;
+                        &--bold {
+                            font-weight: bold;
+                        }
+                    }
+                }
+                .propiedades__sectionDos-buttonDiv{
+                    background-color: $color-primario;
+                    border-radius: 4px;
+                    padding: 3px;
+                    margin: 5px 10px;
+                    .propiedades__sectionDos-button {
+                        font-size: 1.2rem;
+                        font-weight: bold;
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.header {
+    border-top: 4px solid $color-primario;
+    .header__nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+        .header__nav-logo {
+            height: 55px;
+        }
+        .header__nav-button {
+            border: none;
+        }
+        .header__nav-list {
+            .header__nav-text {
+                font-size: 1.4rem;
+                color: #3e3e3e;
+                text-align: center;
+                &--activo {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
