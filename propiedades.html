@@ -32,16 +32,16 @@
 
 			<div id="MenuNavegacion" class="collapse navbar-collapse">
 				<ul class="navbar-nav ms-3 header__nav-list">
-					<li class="nav-item">
+					<li class="header__nav-item">
                         <a class="nav-link header__nav-text" href="index.html">Inicio</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="header__nav-item">
                         <a class="nav-link header__nav-text header__nav-text--activo" href="propiedades.html">Propiedades</a>
                     </li>
-					<li class="nav-item">
+					<li class="header__nav-item">
                         <a class="nav-link header__nav-text" href="nosotros.html">Nosotros</a>
                     </li>
-					<li class="nav-item">
+					<li class="header__nav-item">
                         <a class="nav-link header__nav-text" href="contacto.html">Contacto</a>
                     </li>
 				</ul>
@@ -50,13 +50,13 @@
     </header>
     <main class="propiedades">
         <section class="propiedades__sectionUno">
-            <form action="" class="propiedades__form">
+            <form action="#" method="get" class="propiedades__form">
                 <div class="propiedades__form-div">
                     <h1 class="propiedades__title">Busca tu inmueble ¡aquí!</h1>
                 </div>
                 <div class="propiedades__form-div propiedades__form-divRow">
                     <div class="propiedades__form-group">
-                        <label for="propiedad" class="propiedades__form-label">Tipo de inmueble</label>
+                        <label for="inmueble" class="propiedades__form-label">Tipo de inmueble</label>
                         <select name="inmueble" id="inmueble" class="propiedades__form-input">
                             <option value="todas" class="propiedades__form-text">Todos los Inmuebles</option>
                             <option value="casa" class="propiedades__form-text">Casa</option>
@@ -131,8 +131,8 @@
                         </div>
                         <div class="propiedades__ambiente">
                             <div class="propiedades__ambiente-div">
-                                <label for="min" class="propiedades__form-sublabel">Mínimo:</label>
-                                <select name="precio" id="min" class="propiedades__form-input">
+                                <label for="amb-min" class="propiedades__form-sublabel">Mínimo:</label>
+                                <select name="ambientes" id="amb-min" class="propiedades__form-input">
                                     <option value="s-e" class="propiedades__form-text">Sin especificar</option>
                                     <option value="1" class="propiedades__form-text">Monoambiente</option>
                                     <option value="2" class="propiedades__form-text">2</option>
@@ -142,8 +142,8 @@
                                 </select>
                             </div>
                             <div class="propiedades__ambiente-div">
-                                <label for="max" class="propiedades__form-sublabel">Máximo:</label>
-                                <select name="precio" id="max" class="propiedades__form-input">
+                                <label for="amb-max" class="propiedades__form-sublabel">Máximo:</label>
+                                <select name="ambientes" id="amb-max" class="propiedades__form-input">
                                     <option value="s-e" class="propiedades__form-text">Sin especificar</option>
                                     <option value="1" class="propiedades__form-text">Monoambiente</option>
                                     <option value="2" class="propiedades__form-text">2</option>
@@ -163,7 +163,7 @@
                             </p>
                             <div id="collapseOne" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
                                 <div class="accordion-body p-0 m-0">
-                                    <divc class="propiedades__accordion-item">
+                                    <div class="propiedades__accordion-item">
                                         <p class="propiedades__form-label">Superficie</p>
                                         <div class="propiedades__accordion-subitem">
                                             <div class="propiedades__form-radio">

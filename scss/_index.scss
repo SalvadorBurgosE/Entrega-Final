@@ -94,12 +94,7 @@
             flex-flow:  row wrap;
             justify-content: center;
             .index__sectionDos-div {
-                border: 1px solid #e7e7e7;
-                background-color: #fff;
-                border-radius: 4px;
-                text-align: center;
-                box-shadow: 0 2px 3px 0 rgb(157, 157, 157);
-                margin: 10px 40px;
+                @include div-style (1px, #e7e7e7, 0px);
                 width: 230px;
                 .index__sectionDos-imgDiv {
                     position: relative;
@@ -179,13 +174,7 @@
             flex-flow: wrap row;
             justify-content: center;
             .index__sectionTres-div {
-                border: 1px solid #e7e7e7;
-                background-color: #fff;
-                border-radius: 4px;
-                text-align: center;
-                box-shadow: 0 2px 3px 0 rgb(157, 157, 157);
-                margin: 10px 40px;
-                padding: 5px 5px 10px 5px;
+                @include div-style (1px, #e7e7e7, 5px);
                 width: 230px;
                 .index__sectionTres-divTitle {
                     font-size: 1.6rem;

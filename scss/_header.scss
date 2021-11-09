@@ -12,12 +12,14 @@
             border: none;
         }
         .header__nav-list {
-            .header__nav-text {
-                font-size: 1.4rem;
-                color: #3e3e3e;
-                text-align: center;
-                &--activo {
-                    font-weight: bold;
+            .header__nav-item {
+                .header__nav-text {
+                    font-size: 1.4rem;
+                    color: #3e3e3e;
+                    text-align: center;
+                    &--activo {
+                        font-weight: bold;
+                    }
                 }
             }
         }

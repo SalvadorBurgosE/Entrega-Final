@@ -80,8 +80,10 @@
                 height: 65px;
             }
             .header__nav-list {
-                .header__nav-text {
-                    font-size: 1.6rem;
+                .header__nav-item {
+                    .header__nav-text {
+                        font-size: 1.6rem;
+                    }
                 }
             }
         }
@@ -176,6 +178,10 @@
             .index__sectionDos-divs {
                 .index__sectionDos-div {
                     width: 250px;
+                    transition: .5s;
+                    &:hover {
+                        @include div-hover
+                    }
                     .index__sectionDos-imgDiv {
                         .index__sectionDos-img {
                             height: 175px;
@@ -209,6 +215,10 @@
             }
             .index__sectionTres-divs {
                 .index__sectionTres-div {
+                    transition: .5s;
+                    &:hover {
+                        @include div-hover
+                    }
                     .index__sectionTres-divTitle {
                         font-size: 1.8rem;
                     }
@@ -344,13 +354,16 @@
                     height: 75px;
                 }
                 .header__nav-list {
-                    .header__nav-text {
-                        font-size: 1.8rem;
-                        margin: 0px 10px;
-                        transition: 0.5s;
-                        &:hover {
-                            transform: scale(1.05);
-                            border-bottom: 2px solid $color-primario;
+                    .header__nav-item {
+                        margin: 0px 2px;
+                        .header__nav-text {
+                            font-size: 1.8rem;
+                            margin: 0px 10px;
+                            transition: 0.5s;
+                            &:hover {
+                                transform: scale(1.05);
+                                border-bottom: 2px solid $color-primario;
+                            }
                         }
                     }
                 }
@@ -414,7 +427,11 @@
                 .index__sectionDos-divs {
                     margin-top: 20px;
                     .index__sectionDos-div {
-                        width: 280px;
+                        width: 280px;   
+                        transition: .5s;
+                        &:hover {
+                            @include div-hover
+                        }
                         .index__sectionDos-imgDiv {
                             .index__sectionDos-img {
                                 height: 200px;
@@ -449,7 +466,11 @@
                 .index__sectionTres-divs {
                     .index__sectionTres-div {
                         width: 280px;
-                        height: 300px;
+                        height: 300px;   
+                        transition: .5s;
+                        &:hover {
+                            @include div-hover
+                        }
                         .index__sectionTres-divTitle {
                             font-size: 2rem;
                         }
@@ -529,7 +550,11 @@
                 margin: 20px 0px;
                 .propiedades__sectionDos-divs {
                     .propiedades__sectionDos-div {
-                        width: 280px;
+                        width: 280px;   
+                        transition: .5s;
+                        &:hover {
+                            @include div-hover
+                        }
                         .propiedades__sectionDos-imgDiv {
                             .propiedades__sectionDos-img {
                                 height: 200px;
@@ -580,7 +605,11 @@
                 .servicios {
                     .servicios__div {
                         .servicios__container {
-                            height: 350px;
+                            height: 350px;       
+                            transition: .5s;
+                            &:hover {
+                                @include div-hover
+                            }
                             .servicios__title {
                                 font-size: 2rem;
                             }

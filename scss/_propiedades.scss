@@ -172,12 +172,7 @@
             flex-flow:  row wrap;
             justify-content: center;
             .propiedades__sectionDos-div {
-                border: 1px solid #e7e7e7;
-                background-color: #fff;
-                border-radius: 4px;
-                text-align: center;
-                box-shadow: 0 2px 3px 0 rgb(157, 157, 157);
-                margin: 10px 40px;
+                @include div-style (1px, #e7e7e7, 0px);
                 width: 230px;
                 .propiedades__sectionDos-imgDiv {
                     position: relative;
